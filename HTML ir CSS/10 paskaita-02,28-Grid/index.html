@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=g, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <main>
+        <section id="grid">
+            <h1> Display Grid</h1>
+            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-css-grid-properties"
+                target="_blank"></a>
+            <a href="" target="_blank"></a>
+            <h2>Grid properties</h2>
+            <div>
+                <div>
+                    <h2>Parent</h2>
+                    <ul>
+                        <li>Grid-template-colums-nurodome stulpeliu kieki ir dydi -100px 50px 100px</li>
+                        <li>Grid-template-rows: nurodome eiluciu kieki ir auksti - 50px 150px</li>
+                        <li></li>
+                        <li>grid-template:
+                            grid-template-rows
+                            grid-template-colums;
+                        </li>
+                        <li>grid-template-area - uzvadinami tinklelio laukai,langeliai sugalvotais pavadinimais</li>
+                        <li>grid-auto-columns -automatiskai kuria papildomus stulpelius pagal seka pertekliniam elementu
+                            kiekiui</li>
+                        <li>grid-auto-rows -automatiskai kuria papildomus eilutes pagal seka pertekliniam elementu
+                            kiekiui</li>
+                        <li>grid-auto-flow:row|column|row|dense|column dense;</li>
+                        <li>grid:grid-template-rows/
+                            grid-template-colums/grid-template-areas|grid-autocolums/grid-auto-rows/grid-auto-flow;</li>
+
+
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <h2>Children</h2>
+                        <ul>
+                            <li>grid-colum-start : nurodo kurioje stulpelio linijoje prasides elementas</li>
+                            <li>grid-colum-end : nurodo kurioje stulpelio linijoje pasibaigs elementas</li>
+                            <li>grid-row-start nurodo kurioje eilutes linijoje prasides elementas</li>
+                            <li>grid-row-end nurodo kurioje eilutes linijoje pasibaigs elementas</li>
+                            <li>grid-column:grid-column-start/grid-column-end;</li>
+                            <li>grid-row:grid-row-start / grid-row-end;</li>
+                            <li>grid-area : name -grid-row start grid-column-start/grid-row-end/grid-column-end;</li>
+                            <li>column-gap: tarpas tarp grid;o stulpeliu</li>
+                            <li>row-gap: tarpas tarp grid;o eiluciu</li>
+                            <li>gap: row-gap column-gap</li>
+                            <li>justify-items</li>
+                            <li>align-items</li>
+                            <li>place-items:align-items justify-items</li>
+                            <li>justify-content</li>
+                            <li>align-content</li>
+                            <li>place-content:align-content justify-content</li>
+                            <li>align-self</li>
+                            <li>justufy-self</li>
+                            <li>place-self</li>
+                            <li>order -eiliskuma kontroliuoja tiek grid,tiek flex'e(0 default)</li>
+
+
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Special Units and Functions</h2>
+                        <ul>
+                            <li>1fr - nurodo kokia dali turinio uzims(atemus:tarpus,px,margin,padding,%,...)</li>
+                            <li>repeat (kiek,ka)</li>
+                            <li>minmax(nuo, iki)</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="gridPvz">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </section>
+        /*uzduotis klasika*/
+        <section class="flex">
+            <div class="left-side">
+              <div class="item">1</div>
+            </div>
+      
+            <div class="right-side">
+              <div class="right-top">
+                <div class="item">2</div>
+              </div>
+      
+              <div class="right-bottom">
+                <div class="item">3</div>
+                <div class="item">4</div>
+              </div>
+            </div>
+          </section>
+      
+          <section class="grid">
+            <div class="grid__item">1</div>
+            <div class="grid__item">2</div>
+            <div class="grid__item">3</div>
+            <div class="grid__item">4</div>
+          </section>
+          /*uzduotis kita*/
+          <section id="gridUz">
+            <div >
+               <img src="" alt="">
+            </div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </section>
+    </main>
+
+</body>
+s
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./images/cloud.PNG">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div>
+                <div><!--atributai-->
+                    <h1>Formos elementu atributai</h1>
+                    <ul>
+                        <li>for - label atributas-nurodo kuriam ivestuees laukui priskirtas label'is</li>
+
+                    </ul>
+
+                </div>
+                <h1>
+                    <ul>
+                        <li>form -formos tag'as</li>
+                        <li>label - etikete-naudojama prie ivesties nurodyti ivesties laukelio pavadinima</li>
+                        <li>input - ivesties laukelis skirtas DAUG KAM(priklauso nuo atributo reiksmes0</li>
+                        <li>textarea - ivesties laukelis skirtas dideliam teksto kiekiui</li>
+                        <li>select -ivesties laukas skirtas pasirinkti vienam is pateiktu variantu</li>
+                        <li>option - select'o pasirinkimo variantai</li>
+                        <li>optgruop - option'u grupes</li>
+                        <li>output - formos isvesties vieta</li>
+                        <li>id - *aributas -sujungti label su ivesties lauku;ivesties lauko atpazinimui per JS</li>
+                        <li>name - ivesties lauko atributas -skirtas atpazinti ivesties lauka</li>
+                        <li>placeholder - ivesties lauko atributas - skirtas atvaizduoti pavyzdine ivesti</li>
+                        <li>rows/cols - textarea atributas - skirtas nurodyti textarea dydi(geriau naudoti CSS-a</li>
+                        <li>label -optgruop atributas - skirtas nurodyti optio'u grupes pavadinimui</li>
+                        <li>value -* atributas -nurodo ivesties reiksme</li>
+                        <li>selected -option atributas -nurodo automatiskai pasirinkta option'a</li>
+                        <li>type input atributas-daug opciju:
+                            <ul>
+                                <li>button - mygtukas(retai naudojamas)</li>
+                                <li>color - spalvos pasirinkimas</li>
+                                <li>date -</li>
+                                <li>datetime -ir valanda pasirenkama</li>
+                                <li>email reikalauja formato email'o</li>
+                                <li>file - pasirinkti kompiuterio fail'a</li>
+                                <li>hidden - paslepia input'a(neneaudojamas)</li>
+                                <li>image - formos pateikimo mygtukas paveiksliuko pavidalu</li>
+                                <li>month - metu/menesio pasirinkimas</li>
+                                <li>number - min/max/zingsnis gb nurodyma</li>
+                                <li>password - slaptazodis,kuri maskuoja <i>akis</i></li>
+                                <li>range - slankiklis -is bibliotekos pasiimti -nuo..iki </li>
+                                <li>reset - isvalo forma</li>
+                                <li>search - paieskai skirtas laukas</li>
+                                <li>submit - mygtukas formos pateikimui</li>
+                                <li>tel - telefono -pattern-nusako kokiu formatu turi buti uzrasytas tekstas</li>
+                                <li>text -tekstas</li>
+                                <li>time - tik valandos</li>
+                                <li>url - nuorodos</li>
+                                <li>week - pasirinkti savaite</li>
+                                <li>checkbox</li>
+                                <li>radio - vienas pasirinkimas</li>
+                                <li>checked -radio/checkbox pradinis pazymetas radio box'as</li>
+
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </h1>
+            </div>
+            <div>
+                <h1>Pavyzdine forma</h1>
+
+
+                <form><!--jei naudojame file : action="results.html" method="GET" enctype="multipart/from-data"-->
+                    <label for="">Pasirinkti megstama spalva</label>
+                    <div>
+                        <label for="blue">Melyna</label>
+                        <input type="radio" name="color" id="blue" value="#3d3d96" checked><br>
+                        <label for="red">Raudona</label>
+                        <input type="radio" id="red" name=" color" value="#e25311d8"><br>
+
+                        <input type="date">
+                        <input type="email" required>
+                        <button>submit</button>
+                        <input type="file">
+                        <input type="img" src="">
+                        <input type="submit" value="Pateikti forma">
+                        <input type="tel" pattern="/[]/">
+                        <input type="checkbox">
+                        <input type="radio">
+
+                    </div>
+                    <div>
+                        <label for="vardas">Vardas:</label>
+                        <input type="text" id="" vardas name="vardas" placeholder="Iveskite savo varda...">
+                    </div>
+
+                    <div>
+                        <label for="">Pavarde:</label>
+                        <input type="text">
+
+                    </div>
+                    <div>
+                        <label for="">Papasakokite apie save:</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <label for="">Pasirinkti megstamiausia spalva</label>
+                        <select name="" id="">
+
+                            <optgroup label="Tamsios spalvos">
+                                <option value="" selected disabled></option>
+                                <option value="">Melyna</option>
+                                <option value="">Raudona</option>
+                                <option value="">Zalia</option>
+                            </optgroup>
+                            <optgroup label="Sviesios spalvos">
+                                <option value="">Melyna</option>
+                                <option value="">Raudona</option>
+                                <option value="">Zalia</option>
+                            </optgroup>
+                        </select>
+
+                </form>
+            </div>
+            </div>
+
+        </section>
+    </main>
+    <div>
+        <h1> UZDUOTIS1 </h1>
+        <form class="color" >
+            <div>
+                <label for="name"> Name :</label>
+                <input type="text" name="name" id="name" placeholder="your name" autocomplete="off">
+            </div>
+            <div>
+                <label for="name"> Email :</label>
+                <input type="email" name="name" id="name" placeholder="your email"autocomplete="off" >
+            </div>
+            <div>
+                <label for="name"> Password :</label>
+                <input type="password" name="name" id="name">
+            </div>
+            <div>
+                <label for="name"> Phone Number:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="name"> Gender :</label>
+                <label for="name">Male:</label>
+                <input type="radio" name="name" id="name">
+                <label for="name">Female:</label>
+                <input type="radio" name="name" id="name">
+                <label for="name">Other:</label>
+                <input type="radio" name="name" id="name">
+
+            </div>
+            <div>
+                <label for="name"> language </label>
+                <select name="name" id="name">
+                    <option> Select language</option> 
+                    <option selected disabled> Select language</option>
+                    <option value="Lt">Lt</option>
+                    <option value="En">En</option>
+                   
+                </select>
+                
+            </div>
+            <div>
+                <label for="name"> Zip Code: </label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="name">About </label>
+                <textarea name="text" id="name" cols="30" rows="3"> Write about yourself... </textarea>
+                
+                
+            </div>
+            <div>
+                <textarea name="text" id="" cols="30" rows="3"> Register</textarea>
+            </div>
+            <hr>
+
+            <div class="task2">
+                <form >
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="your name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="your email">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" >
+                    </div>
+                    <div>
+                        <label for="phone">Phone number</label>
+                        <input type="tel" name="phone" id="phone" >
+                    </div>
+                    <div>
+                        <label for="">Gender:</label>
+                        <label for="">Male:</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="">Female:</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="">Other:</label>
+                        <input type="radio" name="gender" id="other" value="other">
+                    </div>
+                    <div>
+                        <label for="language">Language</label>
+                        <select name="language" id="language">
+                            <option disabled selected >Select language</option>
+                            <option value="LT">LT</option>
+                            <option value="EN">EN</option>
+                            <option value="LV">LV</option>
+                            <option value="SW">SW</option>
+                            <option value="GB">GB</option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <label for="zipCode">Zip Code:</label>
+                        <input type="text" name="zipCode" id="zipCode" >
+                    </div>
+                    <div>
+                        <label for="about">About:</label>
+                        <textarea name="about" id="about" placeholder="Write about yourself..." >Write about yourself...</textarea>
+                    </div>
+                    <div></div>
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

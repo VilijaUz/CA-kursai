@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Formos valdymas</title>
+	<script src="./scripts/main.js" defer></script>
+	<link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+	<main>
+		<section id="pirmaForma">
+			<h1>Pirmoji forma - Vardo ir pavardes ilgis</h1>
+			<form>
+				<div>
+					<label for="vardas">Vardas</label>
+					<input type="text" name="vardas" id="vardas">
+				</div>
+				<div>
+					<label for="pavarde">Pavarde</label>
+					<input type="text" name="pavarde" id="pavarde">
+				</div>
+				<input type="submit" value='skaiciuoti'>
+				<!-- <button>Pateikti</button> -->
+			</form>
+			<h3 id="pirmosFormosAts">Jusu vardo ilgis yra: <span>0</span> raidziu ilgio</h3>
+		</section>
+
+		<section>
+			<h1>Matematika</h1>
+			<h3>Sudetis</h3>
+			<form id="sudetiesForma">
+				<input type="number" name="pirmasSudetiesDomuo" id="pirmasSudetiesDomuo" placeholder="pirmasDuomuo...">
+				<span> + </span>
+				<input type="number" name="antrasSudetiesDomuo" id="antrasSudetiesDomuo" placeholder="antrasDomuo...">
+				<input type="submit" value="=">
+				<span id="sudetiesAts"></span>
+			</form>
+		</section>
+		<!--  -->
+		<section i="uzduotisDaugyba">
+			<h3>Daugyba</h3>
+			<form id="daugybosForma">
+				<input type="number" name="pirmasDaugybosDomuo" id="pirmasDaugybosDomuo">
+				<span> * </span>
+				<input type="number" name="antrasDaugybosDomuo" id="antrasDaugybosDomuo">
+				<input type="submit" value="=">
+				<span id="daugybosAts"></span>
+			</form>
+		</section>
+		<!--  -->
+		<section i="uzduotisLaipsnioKelimas">
+			<h3>Laipsnio Kelimas</h3>
+			<form id="laipsnioKelimoForma">
+				<input type="number" name="pirmasLaipsnioDomuo" id="pirmasLaipsnioDomuo">
+				<span> ** </span>
+				<input type="number" name="antrasLaipsnioDomuo" id="antrasLaipsnioDomuo">
+				<input type="submit" value="=">
+				<span id="laipsnioKelimoAts"></span>
+			</form>
+		</section>
+		<!--  -->
+		<section i="uzduotisSakniesTraukimas">
+			<h3>Saknies Traukimas</h3>
+			<form id="sakniesTraukimoForma">
+				<input type="number" name="pirmasSakniesDomuo" id="pirmasSakniesDomuo">
+				<span> &Sqrt; </span>
+				<input type="number" name="antrasSakniesDomuo" id="antrasSakniesoDomuo">
+				<input type="submit" value="=">
+				<span id="sakniesTraukimoAts"></span>
+			</form>
+		</section>
+		<!--  -->
+		<section id="uzduotisLiekanosRadimasTraukimas">
+			<h3>Liekanos radimas</h3>
+			<form id="LiekanosRadimoForma">
+				<input 
+				type="number" 
+				name="pirmasLiekanosRadimoDomuo"
+				 id="pirmasLiekanosRadimoDomuo">
+				<span> % </span>
+				<input 
+				type="number"
+				 name="antrasLiekanosRadimoDomuo"
+				  id="antrasLiekanosRadimoDomuo">
+				<input 
+				type="submit" 
+				value="=">
+				<span id="liekanosRadimoAts"></span>
+			</form>
+		</section>
+		<!-- 1 extra) Sukurti vieną formą HTML'e, kurioje galima būtų 
+			įvesti du skaičius ir select'e nurodyti norimą veiksmą ir
+			būtų grąžinamas teisingas atsakymas. 
+			<section>
+				<h3>Du skaiciai</h3>
+				<form id="duSkaiciai">
+					<label for="skaicius1">Pirmas skaičius:</label>
+					<input 
+			   type="number"
+			   name="skaicius1"
+			   id="skaicius1" 
+			    >
+					<label for="skaicius2">Antras skaičius:</label>
+					<input 
+			   type="number"
+			   name="skaicius2"
+			   id="skaicius2" 
+			    >
+					<label for="veiksmas">Veiksmas:</label>
+          <select id="veiksmas" name="veiksmas">
+          <option value="multiply">Daugini</option>  
+					<option value="add">Sudėti</option>
+          <option value="subtract">Atimti</option>
+          <option value="divide">Dalinti</option>
+           </select>
+					 <input type="submit" value="Skaičiuoti">
+					 <span id="duSkaiciaiAts"></span>
+
+				</form>
+			</section>-->
+		<!-- Sukurkite kino teatro kainos apskaičiavimo platformą.
+				 Joje turi būti vienas input laukelis,kur žmogus įrašo savo amžių, 
+					o JS apskaičiuoja kainą ir išveda ją h1 elemente. Standartini
+		 bilietas – 6eu, iki 16 metų – 50proc nuolaida, 1/3 nuolaida 
+		 vyresniems nei 60. -->
+		<section>
+			<h1>Bilieto kaina <span id="bilietoKaina">eur</span></h1>
+			<form id="kinoBilietas">
+				<input type="number" name="amzius" id="amzius" placeholder="irasykite kiek Jums metu" required>
+				<input type="submit" value="suskaiciuoti">
+			</form>
+
+		</section>
+		<!--  Kai kuriose šalyse reikia eiti į kariuomenę, jei tau tarp 
+			18 ir 30 metų ir jei neturi kriminalinio įrašo. Sukurti programą, 
+			kuri su input + checkBox pasakytų ar tam žmogui gali reikėti eiti 
+			į kariuomenę (h1 elemente). Hint: pasirinkite su querySelector tik 
+			pažymėtą checkBox input (aha, yra toks CSS selektorius), ir 
+			perskaitykite jo reikšmę. -->
+		<section>
+			<h1>Ar reikia eiti i kariuomene ? <span id="ar"></span></h1>
+			<form id="kariuomene1">
+				<input type="number" name="amzius2" id="amzius2" placeholder="Irasykite savo amziu." required>
+				<span>Ar turite teistuma?</span>
+				<input type="checkbox" name="teistumas" id="teistumas">
+				<input type="submit" value="Pateikti">
+
+			</form>
+		</section>
+		<!-- Įmonė visiems savo darbuotojams duoda Kalėdų bonusą - 
+				50 eurų. Tiems darbuotojams, kurie dirba ilgiau nei 10 metų 
+				- prideda papildomus 50 eurų (bendrai - 100 eurų).
+	 O jei dirba 20 metų ar daugiau - papildomus 100 eurų 
+ (iš viso - 200 eurų). Parašyk programą, kuri leistų
+ darbuotojui įsivesti skaičių kiek dirbo metų įmonėje,
+ input elementu - atsirastų tekstas su pervedamu bonusu.
+  Pvz: [16] => "Jūsų bonusas: 100 eurų". -->
+	<section>
+		<h1>Kaledu (lojalumo)bonusas : <span id="bonusoDydis"></span>eur</h1>
+		<form id="bonusas">
+			<input 
+			type="number"
+			 name="metai" 
+			 id="metai" 
+			 placeholder="kiek metu dirbate imoneje?" required>
+			<input 
+			type="submit" 
+			value="suskaiciuoti">
+		</form>
+	</section>
+	<!-- Kiek dienų šiais metais? Parašykite programą,
+		 kur įvedus metus - pasakys ar jie keliemieji, 
+		 ar ne (po forma). Kaip apskaičiuoti ar keliemiji
+		  metai? Jie turi dalintis iš keturių, bet jei 
+			dalinasi iš 100, tai turi dalintis ir iš 400, 
+			kad būtų keliamieji (angl. a year is a leap 
+			year if it is divisible by four, except that 
+			any year divisible by 100 is a leap year only 
+			if it is also divisible by 400). Tai - 
+			populiari užduotis, tad internete rasite 
+			ne vieną versiją, ir daug teorijos kaip skirtingi 
+			žmonės skaičiuoja. Tad rekomenduojame padarius -
+			 pasitikrinti ir kitų žmonių idėjas -->
+			 <section>
+				<h1>Keliamieji metai : </h1>
+				<form id="keliamiejiMetai">
+					<input type="number" name="keliamieji" id="keliamieji" placeholder="Ivesti metus" required>
+					<input type="submit" value="suskaiciuoti">
+				</form>
+				<span id="kokieMetai"></span>
+			 </section>
+<!-- 6 uzduotis-Parašyk programą, kurioje vartotojas 
+	įrašo temperatūra Celsijumi, o programa paskaičiuoja
+	 ir atvaizduoja tą pačią temperatūrą Farenheitu -->
+	 <section>
+		<h1>Temperaturos reiksme is Celsijaus i Farenheita :<span id="pakeista"></span></h1>
+		<form id="farenheitas">
+			<label for="temp"></label>
+			<input type="number" name="farenheitas" id="farenheitas" placeholder="temperaturos reiksme Celsijumi" required>
+			
+			<input type="submit" value="suskaiciuoti">
+		</form>
+	 </section>
+	 <!-- 7uzduotis -->
+	 <section>
+		<h1>El.pastas</h1>
+
+
+	 </section>
+	 <!-- 8 UZDUOTIS -->
+	 <section>
+		<form >
+			<input type="text" name="" id="Vilija">
+			<input type="number" name="" id="">
+			<input type="submit" value="pateikti" >
+		</form>
+		<ul id="ciaKuriame">
+
+		</ul>
+	  </section>
+	 <!-- <section id="extra1">
+		<h1>Skaiciuokle</h1>
+		<form id="skaiciuokle">
+			<input type="number" name="pirmasSk" id="pirmasSk" placeholder="pirmasSk">
+		  <div class='dropdown'>
+				<button class="dropbtn">Veiksmas</button>
+				<div class="dropdown-content">
+					<input type="submit" name="sudetis" id="sudetis" value="sudetis">
+          <input type="submit" name="atimtis" id="atimis" value="atimtis">
+					<input type="submit" name="daugyba" id="daugyba" value="daugyba">
+					<input type="submit" name="dalyba" id="dalyba" value="dalyba">
+				</div>
+
+			</div>
+		</form>
+
+	 </section> --> 
+	</main>
+
+</body>
+
+</html>

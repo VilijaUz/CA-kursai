@@ -1,0 +1,134 @@
+@import url('https://necolas.github.io/normalize.css/');
+
+.pvzForma form {
+    margin-bottom: 5px;
+}
+
+.pvzForma textarea {
+    resize: none;
+}
+
+option:disabled {
+    display: none;
+}
+
+.color {
+    background-color: #46092dd8;
+    width: 25%;
+
+}
+
+form.color div>label:first-child {
+    width: 200px;
+    display: inline-block;
+
+}
+
+form.color>div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+form.color label {
+    color: white;
+}
+
+/*task2*/
+.task2 {
+    margin: 0 auto;
+    width: 425px;
+
+}
+
+.task2>form {
+    background-color: hsl(0deg 42% 41%);
+    color: white;
+    padding: 5px 50px;
+}
+
+.task2 div>lab:first-child {
+    width: 180px;
+    display: inline-block;
+}
+
+.task2>form>div {
+    margin-bottom: 10px;
+}
+
+.task2 option :disabled {
+    display: none;
+    font-size: 0.9rem;
+}
+
+.task2 select {
+    font-size: 0.5rem;
+    padding: 5px 6px;
+    border: none;
+    width: 200px;
+}
+
+.task2 input {
+    border: none;
+
+}
+
+.task2 textarea {
+    width: 200px;
+    border: none;
+}
+
+.task2 *[for="about"] {
+    vertical-align: top;
+}
+
+label {
+    padding: 2px;
+}
+
+.task2 input[type="submit"] {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type="text"] {
+    border-style: initial;
+}
+
+.colorWhite {
+    background-color: rgb(129, 72, 72);
+    padding: 20px 30px;
+    border: rgb(16, 2, 2);
+    width: 30%;
+}
+
+body{
+  background-image: url(https://images.unsplash.com/photo-1553152531-b98a2fc8d3bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3289&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+input[type="button"] {
+    color: grey;
+}
+
+textarea {
+    width: 200px;
+    border-style: dashed;
+}
+
+.contact {
+    background-color: grey;
+    width: 20%;
+    padding: 50px;
+    margin: 25% 25% 25% 25%;
+}
+.fonas {
+  background-color:grey;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0;
+}

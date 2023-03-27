@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ikonos,selektoriai,tranisicijos,animacijos</title>
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+<body>
+    <header>
+        <main>
+            <section id="ikonos">
+                <h1>Ikonos</h1>
+                <p>
+                    ikonos savo tag'o neturi.Jos naudoja kitus tekstinius tag'us ir priskiriamos jiems klases,buna
+                    atvaiduojamos.Dazniausiai naudojami tag'ai yra :i (italic) ir span.<br>
+                    Norint naudoti ikonas ,reikia prijungti viena is daugelio ikonu biblioteku prie savo svetaines.
+                    Galimos bibliotekos;FontAwersome,Bootstrap,MUI,Ant-Design,Tailwind, Bulma ...
+                    ICONS REFERENCE/BOOTSTRAP ICONS
+                </p>
+                <span class="bi bi-telephone-forward"></span>
+                <i class="bi bi-wordpress"></i>
+                <i class="bi bi-windows"></i>
+                <i class="bi bi-telephone-forward"></i>
+                </p>
+                <p>
+                    norint stilizuoti ikonas,<i class="bi bi-wordpress"></i>jas stilizuojame kaip tekstinius dokumentus.
+                    spalva:color,dydis:font-size,Fonas -background-color;
+                </p>
+
+            </section>
+            <section id="selektoriai">
+                <h1>selektoriai</h1>
+                <ul>
+                    <!--paprastieji selektoriai-->
+                    <li>element</li>
+                    <li>class</li>
+                    <li>id</li>
+                    <li>everything</li>
+
+                   <!--atributu selektoriai-->
+                    <li>[attribute] -renkasi elementa turinti nurodyta atributa,pvx.:[class]</li>
+                    <li>[attribute="reiksme"] -renkasi elementa turinti nurodyta atributa su specifine reiksme -[class='bi']</li>
+                    <li>[attribute~='reiksme']-renkasi atributa turinti nurodyta atributa,kur viena is reiksmiu yra nurodyta reiksme,pvz.:[class~='bi']</li>
+                    <li>[attribute|='reiksme']-renkasi elementa turinti nurodyta atsributa,kur uz reiksmes padetas bruksnelis ir extra tekstas,pvz.:[class|='bi'] </li>
+                    <li>[attribute^='reiksme'] -renkasi elementa turinti nurodyta atributa,kur reiksme prasideda nurodyta reiksme,pvz.:[href^='https://'] </li>
+                    <li>[attribute$='reiksme']- renkasi elementa turinti nurodyta atributa,kur reiksme pasibaigia nurodyta reiksme,pvz.:[src$='.png']</li>
+                    <li>[attribute*='reiksme']-renkasi elementa turinti nurodyta atributa,kur reiksmeje yra nurodyta simboliu seka,pvz.:[alt*='pav']</li>
+                    <!--pseudo elementai-->
+                    <li>pasirinktas::before - nurodo virtualu elmenta pries parinkta elementa</li>
+                    <li>pasirinktas::after -  nurodo virtualu elementa uz pasirinkto elemento</li>
+                    <li>pasinktas::first-line - nurodo pirmaja eilute pasirinkto elemento</li> 
+                    <li>pasinktas::first-letter - nurodo iki pirmajosios raides pasirinkto elemento</li>
+                   <li>prinktas::marker parintu saraso elementa zymes</li>
+                   <li>parinktas::placeholder - pasirintu formos ivesciu placeholder atributo tekstai</li>
+                   <li>pasirinkta::selection - pasirinktame elemente zymimo turinio stiliai</li>
+                    <!--eiliskumo selektoriai,elementai-->
+                <ul>
+                    <li>*:first-of-type - parenka pirma kazkokio tipo elementa grupeje,div'e,sekcijoje
+                        -pvz.:div>p:first-of-type</li>
+                    <li>:first-child -parenka pirma vaikini elementa,pvz.: div>p:first-child</li>
+                    <li>:last-of-type- parenka paskutinius kazkokio tipo elementus grupeje</li> 
+                    <li>:last-child parenka paskutinius vaikinius elementus  </li>
+                    <li>:only-of-type - parenka elementa jeigu jis grupeje vienintelis savo tipo elementas </li>
+                    <li>:only-child -parenka vaikini elementa,jei jis vienintelis vaikinis elementas grupeje</li>
+                       <li>:nt-child() - parenka kazkelinta arba kas kazkelinta vaikini elementa</li>
+                    <li>:nth-of-type() - parenka kazkelinta arba kas kazkelinta elementa pagal tipa</li>
+                    <li>:nth-last-child() - nuo galo parenka kazkelinta arba kas kazkelinta vaikini elementa</li>
+                    <li>:nth-last-of-type() - nuo galo parenka kazkelinta arba kas kazkelinta elementa pagal tipa</li>
+                </ul>
+                </ul>
+                <ul Nuorodu selektoriai>
+                    <li>:link - nelankyta nuoroda</li>
+                    <li>:visited -lankyta nuoroda</li>
+                    <li>:active -nuoroda paspaudimo metu</li>
+                    <li>:hover - pele ant elemento</li>
+
+                </ul>
+                <ul Formu selektoriai>
+                    <li>::checked -pazymetas radio/ checkbox</li>
+                    <li>:default -iptastas input pavidalas</li>
+                    <li>:disabled -input'as su disabled atributus,isjungtas(kurio negali pildyti)</li>
+                    <li>:enabled - input'as be disabled atributo</li>
+                    <li>:focus - input'as,kuriame dabar yra kursorius,siuo momentu yra aktyvus</li>
+                    <li>:in-range -input'as kurio ivestis yra nurodytose ribose</li>
+                    <li>:out-of-range -input'as kurio ivestis yra uz nurodytu ribu</li>
+                    <li>:valid - input'as su galima ivestimi</li>
+                    <li>:invalid - input'as su neteisinga ivestimi</li>
+                    <li>:indeterminate -neapibrezta input'o reiksme</li>
+                    <li>:optional; -formos ivestis(inputas ar kas nors kitas) be required atributo</li>
+                    <li>:required; -formos ivestis(inputas ar kas nors kitas) su required atributo</li>
+                    <li>:read-only - inputas su readonly atributu</li>
+                    <li>:read-write - inputas be  readonly atributu</li>
+
+                </ul>
+                <ul Likusieji selektoriai>
+                    <li>:fullscreen - parenka elementa,kuris yra pilno ekrano rezime</li>
+                    <li>::lang(language) -parenka elementa,kuris turi nurodytos kalbos atributa</li>
+                    <li>:not(selector) - suteikia stiliu visiems elementams parinktoje dalyje,apart nurodytam not'o viduje</li>
+                    <li>:root - html'o sakninis elementas</li>
+                    <li>:target - navigacijos metu elementas i kuri nukele navigacija</li>
+                    <li>:empty - elementas neturinti NIEKO savo viduje.small</li>
+                
+                </ul>
+                    <input type="text" placeholder="ha ha kaip sekasi">
+                    <input type="number" placeholder="654.....">
+                    <div>
+                        <h1>antraste</h1>
+                        <h1>antraste du</h1>
+                        <h1>antraste 3</h1>
+                        <h1>antraste 4</h1>
+                        <p>pirmas</p>
+                        <p>pirmas2</p>
+                        <p>antras3</p>
+                        <p>antras4</p>
+                        <h2>heading2.1</h2>
+                        <h2>heading2.2</h2>
+                        <h2>heading2.3</h2>
+
+                    </div>
+            </section>
+        </main>
+    </header>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iteraciniai masyvu metodai ir Destrukturizavimas ir Salygos(advanced)</title>
+  <script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <section id="forEach">
+      <h1>ForEach</h1>
+      <h3>Syntax:</h3>
+      <p>
+        forEach( (element)=>{veiksmai...} )
+        forEach( (element,i)=>{veiksmai...} )
+        forEach( (element,i ,array)=>{veiksmai...} )
+      </p>
+      <p>
+        ForEach metodas suka cikla per visa masyva ir kiekvienos
+        iteracijos metu atlieka kazkokius veiksmus su tos iteracijos
+        masyvo elementu (masyvas[i] elementu).
+        ForEach'as negali grazinti reiksmes(neturi return).
+      </p>
+    </section>
+    <section id="filter">
+      <h1>Filter</h1>
+      <h3>Syntax:</h3>
+      <p>
+        filter( (element)=>{veiksmai...} )
+        filter( (element,i)=>{veiksmai...} )
+        filter( (element,i ,array)=>{veiksmai...} )
+      </p>
+      <p>
+        Filter metodas -suka cikla per masyva ir kiekvienos iteracijos metu
+        ar iteracijos masyvo elementas(masyvas[i]elementas) tenkina salyga.
+        Jeigu ELEMENTAS salyga tenkina-jis grazinamas,jeigu ne- negrazinamas.
+      </p>
+    </section>
+    <section id="map">
+      <h1>Map</h1>
+      <h3>Syntax:</h3>
+      <p>
+        map( (element)=>{veiksmai...} )
+        map( (element,i)=>{veiksmai...} )
+        map( (element,i ,array)=>{veiksmai...} )
+      </p>
+      <p>
+        Map metodas -suka cikla per visa masyva
+        ir kiekvienos iteracijos metu kazkaip mutuoja kiekviena
+        iteracijos masyvo elementa (masyvas[i]elementas) ir ji grazina.
+        Kai norime pakeisti masyvo duomenis.
+      </p>
+
+    </section>
+    <section id="reduce">
+      <!-- sumazina -->
+      <h1>Reduce</h1>
+      <h3>Syntax:</h3>
+      <p>
+        reduce( (accumulator,currentValue)=>{veiksmai...} )
+        reduce( (accumulator,currentValue,i)=>{veiksmai...} )
+        reduce( (accumulator,currentValue,i ,array)=>{veiksmai...} )
+
+        reduce( (accumulator,currentValue)=>{veiksmai...},initialValue )
+        reduce( (accumulator,currentValue,i)=>{veiksmai...} ,initialValue )
+        reduce( (accumulator,currentValue,i ,array)=>{veiksmai...},initialValue )
+      </p>
+      <p>
+        Reduce metodas-suka cikla per visa masyva ir kiekvienos iteracijos metu
+        su bendra reiksme(accumulator) ,akumuliatoriumi atlieka kazkoki veiksma
+        -prideda/atima/ -naudodamas sios iteracijos masyvo elementa (masyvas[i]elementas)
+        (currentValue)
+        akumuliatorius-tai reiksme
+        Metodo gale grazina viena reiksme(visu masyvo elementu rezultata)
+        Jeigu yra nurodyta pradine reiuksme(initialValue),tuomet pirmosios iteracijos metu
+        yra atliekami veiksmai su pradine reiksme ir pirmuoju masyvo elementu.
+        Jeigu nera nurodyta pradine reiksme(initialValue),tuomet pirmosios iteracijos metu
+        yra atliekami veiksmai su pirmaja masyvo reiksme ir antraja masyvo reiksme.
+
+      </p>
+    </section>
+    <section id="reduceRight">
+      <h1>ReduceRight</h1>
+      <p>
+        Lygiai tas pats kaip ir deduce tik is kito galo(right-to- left,rtl)
+        justas-kiek paskaiciau tai reduceRight naudojamas pagrinde tada, kai gali
+         kisti array ilgis kazkuriuo metu (nzn kada taip gali but) ir 
+         tuo atveju, jei iteruojam LTR gali praskipint kazkoki elementa,
+          nes sutrumpejo arr ilgis
+      </p>
+    </section>
+    <section id="flatMap">
+      <h1>FlatMap</h1>
+      <p>
+        Apjungtas flat(1) ir map metodai i viena.Neturi galimybes keisti
+        flat'o gylio.
+      </p>
+    </section>
+    <section id="some">
+      <h1>Some</h1>
+      <p>
+        (klausia ar bent vienas elementas turi ta reiksme,salyga tiksliau.)
+        SOME metodas-suka cikla per visa masyva ir kiekvienos
+        iteracijos metu TIKRINA AR BENT VIENAS iteracijos masyvo elementas
+        atitinka nurodyta salyga.
+        Jigu bent vienas elementas atitinka nurodyta salyga,
+        metodas grazina true,kitu atveju - false.
+        Jei nei vienas elementas neatitinka nurodytos salygos,grazina false.
+      </p>
+    </section>
+    <section id="every">
+      <h1>Every</h1>
+      <p>
+        ...tikrina ar kiekvienas iteracijos masyvo
+        elementas atitinka salyga.Jeigu kiekvienas masyvo elementas
+        atitinka salyga- grazina true,jei neatitinka bent vienas elementas
+        salygos - grazina false.
+      </p>
+    </section>
+    <section id="find">
+      <h1>Find</h1>
+      <p>
+        Find metodas.....tikrina ar iteracijos masyvo elementas atitinka salyga
+        ir jeigu iteracijos masyvo elementas atitnka nurodyta salyga-
+        grazina elementa.Jei neatitinka-juda prie sekancios iteracijos.
+        Jeigu po viso masyvo iteraciju nera randamas elementas atitnkancios
+        nurodytos salygos-grazina indefind.
+      </p>
+    </section>
+    <section id="findLast">
+      <h1>FindLast</h1>
+      <p>
+        atlieka viska ta pati kaip ir find,tik nuo kito galo.(right-to-left)
+      </p>
+    </section>
+    <section id="findIndex">
+      <h1>FindIndex</h1>
+      <p>
+        ..viskas tas pats,tik grazina ne elementa,o elemento indeksa.
+        Jei neatitinka -garzina ne undefind,o -1.
+
+      </p>
+    </section>
+
+    <section id="findLastIndex">
+      <h1>FindLastIndex</h1>
+      <p>
+   ..ta pati kaip ir findIndex,tik nuo kito galo(right-to-left).
+
+      </p>
+    </section>
+    
+
+    <section id="imantriuSalygu">
+   <h1>Ternary(?:)</h1>
+<p>salygos uzrasymo budas,kur slyga rasoma be if,o uz jos rasomas'?'
+  po kurio aprasomas true atvejis,po kurio rasoimas':' ,po kurio rasomas else atvejis
+  Else atvejisgali buti papildoma salyga,uz kurios vel atkartojama ternery seka.
+</p>
+   <h1>Logical NAD(&&)</h1>
+
+    </section>
+
+    <section id="destrukturizavimas">
+      <h1>Destrukturizavimas</h1>
+      <p>
+       Elemento(u) REIKSMIU isskirstymas dalimis.
+
+      </p>
+
+    </section>
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+@import url('https://necolas.github.io/normalize.css/');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*[class*='bi'] {
+    color: red;
+    background-color: blue;
+    font-size: 100px;
+    padding: 10px;
+}
+
+p {
+    font-size: 20px;
+    color: brown;
+}
+
+[class~='bi'] {}
+
+[href^='https://'] {}
+
+[src$='.png'] {}
+
+li::before {
+    content: ":)";
+    color: red;
+    font-size: 20px;
+    position: absolute;
+}
+
+li::after {
+    content: ":)";
+    color: blue;
+    font-size: 20px;
+}
+
+/*li::first-line{
+    background-color: bisque;
+}*/
+li::first-letter {
+    font-size: 30px;
+}
+
+li::marker {
+    color: rgb(90, 210, 90);
+}
+
+input::placeholder {
+    color: orange;
+    font-size: 30p;
+    padding-left: 10px;
+
+}
+
+/*vietoj li galima * */
+li::selection {
+    color: yellow;
+    background-color: black;
+}
+
+div>p:first-of-type {
+    color: red;
+}
+
+div>*only-of-type {
+    color: blue;
+}
+
+div>*:nth-child(3n+2) {
+    color: blueviolet;
+}
+
+div.sitas>*:nth-child(3n) {
+    color: grey;
+}
+
+li:nth-child(2n) {
+    background-color: rgb(151, 117, 66);
+}
+
+form>input:invavid {
+    background-color: brown;
+}
+
+/*lentele*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #3b3636;
+}
+
+tbody:nth-child(odd){
+    background-color: aquamarine;
+}
+/*remeliai viduje lenteles*/
+th, td{
+    border:1px solid black;
+    width:100px;
+    position: relative;
+}
+table {
+    border-collapse: collapse;
+    overflow: hidden;
+}
+th:hover,td:hover{
+    color: yellow;
+    background-color: black;
+}
+tr:hover,td:hover{
+    background-color: blue;
+    color: blueviolet;
+}
+/*tr :nth-child(2):hover{
+    color: green;
+}*/
+td:hover::after, th:hover::after{
+    content:"";
+    background-color: aliceblue;
+    position: absolute;
+    top:-50000px;
+    height: 100000px;
+    left:0px;
+    width:100%;
+    z-index:-1;
+}
+
+/*------------*/
+
+.stalas tr:first-of-type {
+    color: red;
+}
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+th:first-child,
+td:first-child {
+    width: 100px;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 200px;
+}
+tbody td:first-child{
+    color: yellow;
+
+
+}
+/*table roka*/

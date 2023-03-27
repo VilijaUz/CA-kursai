@@ -1,0 +1,384 @@
+@import url('https://necolas.github.io/normalize.css/');
+
+.logo img {
+    height: 50px;
+    margin-right: 1px;
+}
+
+.buttonD {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #2c825c;
+    color: white;
+    font-size: 16px;
+    border: #0a0a0a;
+}
+
+#Upirmas {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    height: 200px;
+    background-image: linear-gradient(#4d2f9d, #118228);
+    align-items: center;
+    color: beige;
+    padding: 0 30px;
+
+}
+
+#Upirmas .logo,
+#Upirmas ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+}
+
+#Upirmas a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.pirmas {
+    background-image: linear-gradient(#4d2f9d, #118228);
+    margin: 0;
+    height: 600px;
+    display: flex;
+    padding: 5px 20px;
+}
+
+.pirmas>div {
+    flex: 1;
+}
+
+.pirmas h1 {
+    font-size: 60px;
+    font-weight: 3px;
+    color: aqua;
+    padding: 0 20px;
+}
+
+.pirmas p {
+    font-size: 20px;
+    color: aqua;
+    padding: 0 20px;
+}
+
+.pirmas button {
+
+    padding: 20px 30px;
+    background-color: #2c825c;
+    color: white;
+    font-size: 16px;
+    border-color: aliceblue;
+    margin-top: 150px;
+
+}
+
+.pirmas img {
+    width: 100%;
+    height: 100%;
+}
+
+.antras {
+    background-color: rgb(235, 230, 225);
+    margin: 0;
+    height: 200px;
+    padding: 5px 20px;
+}
+
+h2 {
+    color: grey;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex {
+    display: grid;
+
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.trecias {
+    background-color: rgb(171, 156, 156);
+    margin: 0;
+
+    padding: 10px 40px;
+}
+
+.trecias h3 {
+    color: grey;
+    font-size: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.flex img {
+    height: 50px;
+    width: 50px;
+}
+
+/* justas tirevicius
+h3::after{
+    content:'';
+    position:absoliute;
+    width:60px;
+    left:50%;
+    translate:-50% 30px;
+    height:4px;
+    backgruond-color:black;*/
+.ketvirtas {
+    background-color: rgb(12, 12, 75);
+    margin: 0;
+    height: 200px;
+    padding: 10px 40px;
+}
+
+.ketvirtas h3 {
+    color: grey;
+    font-size: 30px;
+    height: 30px;
+    ;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ketvirtas>p {
+    font-size: 40px;
+    font-weight: 5px;
+    color: rgb(39, 109, 109);
+    padding: 0 50px;
+    margin: 0;
+    text-align: center;
+}
+
+.ketvirtas div {
+    text-align: start;
+    justify-content: center;
+    margin: 0;
+}
+
+.whiteText {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 5px;
+    color: white;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.blueText {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 5px;
+    color: rgb(39, 109, 109);
+    padding: 0 50px;
+    margin: 0;
+}
+
+.padding {
+    padding-left: 300px;
+    ;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+}
+
+.penktas {
+    background-color: rgb(12, 12, 75);
+    margin: 0;
+    height: 280px;
+    padding: 10px 40px;
+}
+
+.grid-container div {
+    background-color: white;
+    padding-left: 20px;
+}
+
+.button {
+    padding: 5px 20px;
+    background-color: #09100d;
+    color: white;
+    font-size: 16px;
+    margin-left: 60px;
+}
+
+.large-text {
+    font-size: 30px;
+}
+
+h4 {
+    margin-left: 50px;
+}
+
+.sestas {
+    background-color: rgb(235, 230, 225);
+    margin: 0;
+    height: 800px;
+    padding: 5px 20px;
+   
+
+}
+
+.sestas h3 {
+    color: grey;
+    font-size: 30px;
+    height: 30px;
+    ;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.flex-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 200px;
+    justify-content: space-between
+    ;
+}
+
+.greyText {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 2px;
+    color: grey;
+    padding: 0 50px;
+    margin: 0;
+}
+.blackText {
+    font-family:fantasy;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 50px;
+    color: black;
+    padding: 0 50px;
+    margin: 0;
+}
+
+.paddingP{
+    padding: 10px 60px;
+   position: relative;
+    background-color: white;
+    color: grey;
+    font-size: 16px;
+    margin: auto; 
+    border-color: grey;
+}
+.septintas {
+    background-color: rgb(235, 230, 225);
+    margin: 0;
+    height: 300px;
+    padding: 5px 20px;
+}
+.septintas h3{
+    padding-left: 800px;
+}
+.septintas .paddingP{
+    padding-left: 800px;
+    
+}
+.foot {
+    background-color: rgb(14, 14, 71);
+    margin: 0;
+    height: 200px;
+    width:100%;
+    padding: 5px 20px;  
+    color: white; 
+}
+.grid-container4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: rgb(14, 14, 71);
+}
+.post{
+    display: flex;
+}
+.postDate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.postinfo{
+    display: flex;
+}
+.postinfo >*{
+    margin: 0;
+}
+/*tas3 overlap*/
+.gridOverlap{
+    width:630px ;
+    height: 460px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+.gridOverlap > div{
+background-position: center;
+background-size: cover;
+}
+.firstImage{
+    background-image: url('https://boerentrots.be/sites/default/files/styles/image_style_16_9_landscape_sm/public/canonical/shutterstock_295248206.jpg?h=4362216e&itok=Mubs1Sqg');
+    grid-area: 2 / 1 / 4 / 4;
+    /*z-index: 1;*/
+  }
+  .secondImage{
+    background-image: url('https://overetengesproken.nl/blog/wp-content/uploads/2020/03/bloem-meel.jpg');
+    grid-area: 1 / 2 / 3 / 5;
+  }
+  .thirdImage{
+    background-image: url('https://www.seriouseats.com/thmb/LoXQL7Yp_uXxtipH8cCp_LGVg5E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2014__08__20140810-workhorse-bread-vicky-wasik-3-3a86ee51da2e4a7b8239ceb62d8d8d17.jpg');
+    grid-area: 3 / 3 / 5 / 6;
+  }
+  
+  
+
+
+/*transparent text card*/
+.card{
+    height: 500px;
+    width: 500px;
+    color:white;
+    background-image: url("https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/11/2602810-13-Best-Prepared-Meal-Delivery-Services-of-2022-Header-81b9bf.jpg?w=1155&h=1528");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.textBox{
+    background-color: rgba(0, 0, 0, 0.329);
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    /*right: 0;
+    left: 0;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.textBox >*{
+    margin: 0;;
+}

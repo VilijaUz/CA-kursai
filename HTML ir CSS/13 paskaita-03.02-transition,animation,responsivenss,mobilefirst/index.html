@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition,Animation,responsivenss</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div>img</div>
+        <nav>
+            <ul>
+                <li>1</li>
+                <li>1</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tranzicija">
+            <h1>Transition</h1>
+            <p>
+                tranzicija-elemento busenos kitimas
+            </p>
+            <h3>Tranzicijos nustatymai</h3>
+            <ul>
+                <li>transition-property- nurodai koks stilius keiciasi pagal kitus tranzicijos nustatymus(visi
+                    nustatymai tik tam nustaymui,todel geriau nauditi -all)</li>
+                <li>transition-duration - per kiek laiko vykdoma tranzicija</li>
+                <li>transition-timing-function - :ease,ease-in,ease-out,ease-in-out - nurodai laiko ir kitimo funkcija
+                </li>
+                <li>transition-delay-po kiek laiko prades vykdyti tranzixija</li>
+                <li>transition -nurodai visus tranzicijos stilius,svarbu duration nurodyti anksciau negu delay</li>
+            </ul>
+            <p>TRANZICIJOS VEIKSMAI NURODOMI CSS-e naudojant :hover,:focus,:active.. pseudoklase</p>
+            <div class="tranzitionPvz">
+                <div>Pirmasis yay</div>
+            </div>
+            <div class="tranzition1">
+                <div>bandymas pirmas</div>
+            </div>
+            <div class="mygtukas">
+                <button> push</button>
+            </div>
+        </section>
+        <section id="animacija">
+            <h1>Animacija</h1>
+            <p>Elemento kitimas per keleta zingsniu</p>
+            <h3>Animacijos nustatymai</h3>
+            <ul>
+                <li>animation-duaration -kiek laiko uztruks animacija</li>
+                <li>animation-timing-function - nurodo laiko ir kitimo funkcija:ease,..ir kt</li>
+                <li>animation-delay - po kiek laiko prasides animacija</li>
+                <li>animation-iteration-count -kiek kartu animacija vyks</li>
+                <li>animation-direction -animacijos kryptis:normal(default,reverse,alternative,alternative-reverse)</li>
+                <li>animation-fill-mode - kaip elementas elgiasi pries prasidedant animacijai
+                    ir pasibaigus animacijai</li>
+                <li>animation-play-state - ar animacija vykdoma</li>
+                <li>animation-name - animacijos vardas(susigalvotas)</li>
+                <li>animation nurodai visus animacijos stilius,svarbu duration nurodyti anksciau negu delay</li>
+
+            </ul>
+            <!--TRANZICIJOS VEIKSMAI NURODOMI CSS-e naudojant :hover,:focus,:active.. pseudoklase-->
+            <p>Animacijos veiksmai nurodomi naudojant @keyframes (daugeli busenu).Kiekvienas keyfram'as(busena) yra
+                nurodoma % dalimi</p>
+            <div class="animacijosPvz">
+                <div>Animate Me!</div>
+            </div>
+        </section>
+        <div class="helperTall"> </div>
+        <section>
+            <h1>Transform</h1>
+            <ul>
+                <li>rotate - rotuoja elementa nurodytoje asyje(matavimo vnt -deg)</li>
+                <li>translate - pozicijos kitimas(px)</li>
+                <li>scale - dydzio kitimas(skaiciai reiskiantys daugyba)</li>
+                <li>skew - iskraipo elementa(tarsi tampytu uz kampu,matavimo vienetai -deg, rad)</li>
+            </ul>
+            <div class="uzduotis1">
+                <div>Labas</div>
+                <div>ate</div>
+            </div>
+            <div>Animate Me</div>
+            <div class="levitate">
+                <img src="https://img.freepik.com/free-vector/vintage-robot-toy-white-background_1308-77501.jpg?w=2000"
+                    alt="robotas">
+            </div>
+           
+            <div class="anima2">
+                <div>anima2</div>
+
+            </div>
+        </section>
+        <section id="responsive">
+            <h1>Responsive CSS and MobileFirst principias</h1>
+            <p>responsive CSS'as rasomas @media ribose</p>
+            <p>Mobe first principas,nes lengviau nuo mazo ekrano judeti link didelio ir mobiliuju vartotoju daugiau ir
+                ju kiekis auga sparciau</p>
+
+        </section>
+        <section class="penktaUzduotis">
+            <div class="raudonas">raudonas</div>
+            <div class="geltonas" >geltonas</div>
+            <div class="zalias">zalias</div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masyvu metodai</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <section id="masyvuMetodai">
+      <h1><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" target="_blank">Masyvai</a></h1>
+      <h3>Properties</h3>
+      <ul>
+        <li>.length - grazino masyvo ilgi</li>
+      </ul>
+      <h3>Methods(neiteraciniai masyvu metodai)</h3>
+      <ul>
+        <li>.at() -</li>
+        <li>.concat() - prideda du masyvus,nepakeicia pradinio masyvo</li>
+        <li>.fill() - noriu tuscio ,pradinio masyvo,bet be reiksmiu,o tik paskui
+          ji pildai</li>
+        <li>.flat() - masyve esanti masyva isskleidzia,yra gyliai nurodomi</li>
+        <li>.includes() - grazina tik true arba false,patinkrina yra arba nera</li>
+        <li>.indexOf() - grazina kurioje pozicijoje yra reiksme,gali nurodyti nuo
+          kurios pozicijos ieskoti,jei neranda grazina-1</li>
+        <li>.LastIndexOf() </li>
+        <li>Array.isArray() - pasako ar tai masyvas</li>
+        <li>.join() - is stringo pavercia i masyva</li>
+        <li>Array.of() - is nurodytu elementu sukuria masyva</li>
+        <li>.pop() - is galo isima</li>
+        <li>.push() - prideda i gala</li>
+        <li>.reverse() - apsuka</li>
+        <li>.shift() - is pradzios paiima,mutuoja-pradini masyva</li>
+        <li>.unshift() - i pradzia ideda,mutuoja,gali isimti keleta elementu</li>
+        <li>.slice() - paima nuo imtinai iki neimtinai \ iteracinis?</li>
+        <li>.sort()</li>
+        <li>.splice() - nurodai start (nuo)ir kiek trins elementu</li>
+        <li>.toSring() - kaip join,tik neturi galimybes kontroliuoti,.Tik sudeda kablelius</li>
+        <li>.toLocaleSring() - kol kas nereikia</li>
+        <li>.values() - grazina tik reiksmes kaip iteruojama masyva -nebutina</li>
+        <!-- <li>keys() - grazina it eruojama masyvo raktus,pvz.0,1,2..-nebutina</li> -->
+        <!-- <li>Array.from() - masyva isskleidzia i stringus?</li> -->
+        <!-- //<li>.entries() - retai naudojamas-nereikia</li> -->
+      </ul>
+    </section>
+    <a href="https://www.youtube.com/watch?v=hdI2bqOjy3c" target="_blank">Traversy media</a>
+
+    <section id="funkcijos">
+      <div></div>
+      <h1>Funkcijos</h1>
+      <p>
+        apsirasai funkcija: function f_Vardas(param1,param2){veiksmai...}
+      </p>
+      <p>
+        issikvieti funcija: f_vVardas(arg1,arg2);
+      </p>
+      <h3>Parametrai ir Argumentai </h3>
+      <p>
+        Parametrai yra duomenys ,kuriuos funkcija priima ir
+        naudoja savo viduje.
+      </p>
+      <p>
+        Argumentai yra duomenys,kurie yra perduodami funkcijai
+        jos kvietimpo metu.
+      </p>
+      <!-- <img src="./images/argsVsParams.png" alt="params vs args" width="500px" height="auto"> -->
+
+
+      </div>
+      <h1>Callback</h1>
+      <p>
+        kai funkcija ar metodas kreipiasi i kita funkcija.
+      </p>
+      <h1>Arrow funkcija(lambda)</h1>
+      <div>
+        <p>
+          Naujoviskesnis funkcijos aprasymo budas isejes kartu su EcmaScript6.
+        </p>
+        <p>
+          Norint sukurti vardine arrow funkcija reikia-
+          susikurti kintamaji,kuriam prilygini bavarde arrow
+          funkcija.
+        </p>
+        <p>
+          Bevarde arrow funkcija uzsiraso taip:
+           1) (par2,par3,par1,)=> {veiksmai...}
+           2) parametras =>{veiksmai....}
+           3) parametras =>veiksmais;
+
+        </p>
+        <button>Paspausk!</button>
+      </div>
+
+  </main>
+
+
+</body>
+
+</html>

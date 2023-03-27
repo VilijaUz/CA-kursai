@@ -1,0 +1,704 @@
+@import url('https://necolas.github.io/normalize.css/');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+/*apie transition*/
+.tranzitionPvz>div:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    color: azure;
+    background-color: black;
+    /*transition-property: width;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;*/
+    transition: 5s ease width 0s;
+}
+
+.tranzitionPvz>div:nth-child(1):hover {
+    width: 500px;
+    color: rgb(45, 118, 93);
+    font-size: 30px;
+}
+
+.tranzition1>div:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    color: rgb(8, 48, 48);
+    background-color: rgb(123, 23, 23);
+    transition: 4s ease all 1s;
+}
+
+.tranzition1>div:nth-child(1):hover {
+    width: 1000px;
+    color: rgb(79, 30, 111);
+    font-size: 60px;
+}
+
+.mygtukas>button {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    color: rgb(8, 48, 48);
+    background-color: rgb(123, 23, 23);
+    transition: 4s linear all 1s;
+}
+
+.mygtukas>*:hover {
+    width: 100px;
+    color: rgb(79, 30, 111);
+    background-color: rgb(154, 108, 108);
+    ;
+    font-size: 60px;
+}
+
+/*animation*/
+.animacijosPvz {
+    perspective: 200px;
+}
+
+/*prazioje animacijos daiktas buna toks*/
+.animacijosPvz>div:nth-child(1) {
+    width: 150px;
+    height: 100px;
+    background-color: red;
+    color: azure;
+    display: flex;
+    /*justify-content: center;*/
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*transform:rotateX(50deg);
+    transform-origin: bottom right;*/
+    /* animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: betkoks;*/
+    animation: 10s linear 5s infinite alternate none running betkoks;
+}
+
+.animacijosPvz>div:nth-child(1) :hover {
+    animation-play-state: 0s;
+}
+
+@keyframes betkoks {
+    0% {
+        background-color: azure;
+        border: 5px solid black;
+        transform: translateX(300px);
+    }
+
+    50% {
+        background-color: orange;
+        color: black;
+        border: 0px solid black;
+        transform: translate(100px, 300px);
+        transform: translate(100px, 0px);
+        border-radius: 0%;
+    }
+
+    100% {
+        background-color: orange;
+        transform: translate(100px, 0px);
+        border-radius: 50%;
+    }
+
+}
+
+/*uzduotis1*/
+@keyframes uzduotis1 {
+    0% {
+        /* background-color: rgb(150, 189, 52);
+        border: 5px solid rgb(155, 127, 127); */
+        transform: translateY(0px);
+        animation-iteration-count: inherit;
+    }
+
+    100% {
+        /* background-color: orange;
+        border-radius: 50%; */
+        transform: translateY(100px);
+        animation-iteration-count: inherit;
+    }
+
+}
+
+
+.uzduotis1>div:nth-child(1) {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(33, 144, 44);
+    color: azure;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: 10s linear 5s infinite alternate none running uzduotis1;
+}
+
+/*levitacija*/
+div.levitate>img {
+    height: 600px;
+    width: auto;
+    transform: translateX(1000px);
+    animation: 10s alternate infinite levitate ease-in-out;
+}
+
+@keyframes levitate {
+    0% {
+        transform: translate(500px);
+
+    }
+
+    100% {
+        transform: translate(500px);
+    }
+}
+
+
+body {
+    background-color: aqua;
+    color: red;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header div {
+    display: none;
+
+}
+
+@media (min-width:678px) {
+    body {
+        background-color: beige;
+    }
+
+    header div {
+        display: unset;
+
+    }
+}
+
+@media (min-width:992px) {
+    body {
+        color: green;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header ul {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/*vingiuoja*/
+.anima2 {
+
+    margin: 100px auto;
+    width: 300px;
+    height: 150px;
+    color: aliceblue;
+    background-color: rgb(240, 191, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: SKEW;
+    transform-origin: bottom;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes SKEW {
+
+    0% {
+        transform: skewX(25deg);
+    }
+
+    25% {
+        transform: skewX(15deg) translate(10deg) rotate (50deg);
+    }
+
+    75% {
+        transform: skewX(15deg);
+    }
+
+    100% {
+        transform: skewX(-25deg);
+    }
+}
+
+/*Čia svarbiausita Transfor-origin: bottom (judina pagal pagrinda).
+Ir keyframuose SkewX ( nuo - Xdeg iki +Xdeg)*/
+.raudonas {
+    background-color: red;
+
+}
+
+.geltonas {
+    background-color: yellow;
+
+}
+
+.zalias {
+
+    background-color: green;
+
+}
+
+.penktaUzduotis {
+    width: 400px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+@media (min-width:678px) {
+
+    .penktaUzduotis {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        display: inline-flex;
+
+    }
+}
+
+
+@import url('https://necolas.github.io/normalize.css/');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+/*:root{
+    font-size: 1px;
+}*/
+section#units {
+    font-size: 20px;
+    /*pasikeitus ekrano dydziui,galima keisti tik sita parametra*/
+}
+
+.px {
+    font-size: 30px;
+}
+
+.rem {
+    font-size: 2rem;
+    /*width ivertina ir font size*/
+    height: 10rem;
+    /*150px*/
+    width: 5em;
+    /*100px*/
+    border: 1px solid black;
+    ;
+}
+
+.em {
+    font-size: 1em;
+    font-size: 16px;
+}
+
+/*uzduotis 13 d.*/
+.pamoka {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr;
+}
+
+.header {
+    background-color: black;
+}
+
+.menu {
+    background-color: red;
+}
+
+.hero {
+    background-color: blue;
+}
+
+.main {
+    background-color: black;
+}
+
+.banner {
+    background-color: yellow;
+}
+
+.extra {
+    background-color: green;
+}
+
+.pamoka>div {
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image {
+    background-color: rgb(143, 180, 143);
+    color: black;
+}
+
+@media (min-width:550px) {
+    .pamoka {
+        background-color: beige;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 4fr 4fr 2fr 2fr;
+        font-size: 16px;
+    }
+
+    .header {
+        grid-area: 1 / 1/2/ 6;
+    }
+
+    .hero {
+        grid-area: 2 / 1/ 3 /6;
+    }
+
+    .main {
+        grid-area: 3 / 2 / 4/5;
+    }
+
+    .menu {
+        grid-area: 3/ 1 / 6 /1;
+    }
+
+    .banner {
+        grid-area: 4/ 2 / 5 /5;
+    }
+
+    .extra {
+        grid-area: 5/ 2 / 6/4;
+    }
+
+    .image {
+        grid-area: 5/ 4 / 6 /5;
+    }
+
+}
+
+@media (min-width:992px) {
+    .pamoka {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 5fr 2fr 2fr 2fr;
+        color: green;
+    }
+
+    .header {
+        grid-area: 1 / 1/2/ 2;
+    }
+
+    .hero {
+        grid-area: 2 / 1/ 3 /5;
+    }
+
+    .main {
+        grid-area: 3 / 1 / 6/3;
+    }
+
+    .menu {
+        grid-area: 1/ 2/ 2 /5;
+    }
+
+    .banner {
+        grid-area: 6/ 1 / 6 /5;
+    }
+
+    .extra {
+        grid-area: 5/ 4/ 6/6;
+    }
+
+    .image {
+        grid-area: 3/ 4 / 5 /5;
+    }
+
+}
+
+/*kvadrateliai*/
+.kvadrateliai {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    
+}
+
+.kvadrateliai>div {
+    color: rgb(70, 152, 224);
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+
+}
+
+.salotine,
+.salotine1 {
+    background-color: rgb(104, 145, 43);
+}
+
+.raudona {
+    background-color: red;
+}
+
+.melyna,
+.melyna1,
+.melyna2,
+.melyna3,
+.melyna4,
+.melyna5,
+.melyna6,
+.melyna7,
+.melyna8,
+.melyna9,
+.melyna10
+.melyna11,
+.melyna12{
+    background-color: blue;
+}
+
+.oranzine {
+    background-color: orange;
+}
+
+.violetine {
+    background-color: violet;
+}
+
+.salotine {
+    grid-area: 1/1/2/3;
+}
+
+.melyna1 {
+    grid-area: 5/1/6/2;
+}
+
+.melyna2 {
+    grid-area: 6/1/7/2;
+}
+
+.melyna3 {
+    grid-area: 7/1/8/2;
+}
+
+.melyna4 {
+    grid-area: 8/1/9/2;
+}
+
+.melyna5 {
+    grid-area: 9/1/10/2;
+}
+
+.melyna6 {
+    grid-area: 5/2/6/3;
+}
+
+.melyna7 {
+    grid-area: 6/2/7/3;
+}
+
+.melyna8 {
+    grid-area: 7/2/8/3;
+}
+
+.melyna9 {
+    grid-area: 8/2/9/3;
+}
+
+.melyna10 {
+    grid-area: 9/2/10/3;
+}
+
+
+.oranzine {
+    grid-area: 3/1/5/ 3;
+}
+
+.oranzine1 {
+    grid-area: 4/1/5/ 4;
+}
+
+
+.violetine {
+    grid-area: 2/1/3/3;
+}
+
+.salotine1 {
+    grid-area: 10/1/11/3;
+}
+
+.raudona {
+    grid-area: 2/1/3/3;
+}
+
+
+@media (min-width:550px) {
+    .kvadrateliai {
+        background-color: rgb(181, 181, 177);
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-template-rows: 2fr 2fr 3fr 3fr 2fr 2fr 2fr 2fr 1fr;
+        font-size: 20px;
+    }
+
+    .salotine {
+        grid-area: 1/1/5/2;
+    }
+
+    .melyna1 {
+        grid-area: 5/2/6/3;
+    }
+
+    .melyna2 {
+        grid-area: 6/2/7/3;
+    }
+
+    .melyna3 {
+        grid-area: 7/2/8/3;
+    }
+
+    .melyna4 {
+        grid-area: 8/2/9/3;
+    }
+
+    .melyna5 {
+        grid-area: 5/3/6/4;
+    }
+
+    .melyna6 {
+        grid-area: 6/3/7/4;
+    }
+
+    .melyna7 {
+        grid-area: 7/3/8/4;
+    }
+
+    .melyna8 {
+        grid-area: 5/4/6/5;
+    }
+
+    .melyna9 {
+        grid-area: 6/4/7/5;
+    }
+
+    .melyna10 {
+        grid-area: 7/4/8/5;
+    }
+
+
+    .oranzine {
+        grid-area: 3/2/4/ 5;
+    }
+
+    .oranzine1 {
+        grid-area: 4/2/5/ 5;
+    }
+
+
+    .violetine {
+        grid-area: 2/2/3/5;
+    }
+
+    .salotine1 {
+        grid-area: 9/1/10/5;
+    }
+
+    .raudona {
+        grid-area: 2/1/9/2;
+    }
+}
+@media (min-width:992px){
+    .kvadrateliai {
+        background-color: rgb(181, 181, 177);
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 2fr 4fr 3fr 3fr 1fr;
+        font-size: 20px;
+    }
+
+    .salotine {
+        grid-area: 1/1/8/2;
+    }
+
+    .melyna1 {
+        grid-area: 4/2/5/3;
+    }
+
+    .melyna2 {
+        grid-area: 5/2/6/3;
+    }
+
+    .melyna3 {
+        grid-area: 4/3/5/4;
+    }
+
+    .melyna4 {
+        grid-area: 5/3/6/4;
+    }
+
+    .melyna5 {
+        grid-area: 4/4/5/5;
+    }
+
+    .melyna6 {
+        grid-area: 5/4/5/5;
+    }
+
+    .melyna7 {
+        grid-area: 4/5/5/6;
+    }
+
+    .melyna8 {
+        grid-area: 5/5/6/7;
+    }
+
+    .melyna9 {
+        grid-area: 4/6/5/7;
+    }
+
+    .melyna10 {
+        grid-area: 5/6/6/7;
+    }
+    .melyna11 {
+        grid-area: 4/7/5/8;
+    }
+
+    .melyna12 {
+        grid-area: 5/7/6/8;
+    }
+
+
+    .oranzine {
+        grid-area: 3/2/4/ 5;
+    }
+
+    .oranzine1 {
+        grid-area: 3/5/4/ 8;
+    }
+
+
+    .violetine {
+        grid-area: 2/2/3/8;
+    }
+
+    .salotine1 {
+        grid-area: 6/1/7/8;
+    }
+
+    .raudona {
+        grid-area: 2/1/6/2;
+    }
+
+}

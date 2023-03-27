@@ -1,0 +1,87 @@
+@import url('normalize');
+
+.colorRed{
+    color: red;
+  }
+.pavyzdineLentele {
+    border-collapse:collapse ;
+    border-spacing: 0;
+    
+  }
+  td, th {
+    border: 1px solid rgb(78, 69, 69);
+    padding: 1px 2px;
+  }
+ 
+
+table{
+    border-collapse: collapse;
+}
+.textCenter{
+    text-align: center;
+}
+tr > :first-child{
+color:blue;
+}
+div > p {
+     color: aqua;
+    background-color: black;
+}
+#id{
+
+}
+div section>p{
+    background-color: brown;
+    color: beige;
+}
+div.hihi.haha#idvardas{
+    color: blueviolet;
+    background-color: coral;
+}
+div + section{
+
+}
+input:checked ~ label {
+    color: red;
+}
+.fonasBlack{
+    background-color: black;
+    color: white;
+    width: 60%;
+    margin:0 auto;
+}
+.fonasBaltas{
+    background-color: white;
+    color: rgb(18, 3, 3);
+}
+.fonasGeltonas{
+    background-color: yellow;
+    color: white;
+}
+.fonasRaudonas{
+    background-color: red;
+}
+.textSize{
+    font-size: 30px;
+    color: chartreuse;
+}
+.btn{
+    font-size: 0.5rem;
+    font-weight: 200;
+    padding:0.5em 1em;
+    color: yellowgreen;
+    background-color: black;
+    border: 10px solid white;
+    border-radius:5px;
+    margin: auto;
+}
+.task1 > table{
+    margin:0 auto;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    width:60%;
+}
+.textCenter{
+    font-display: center;
+
+}

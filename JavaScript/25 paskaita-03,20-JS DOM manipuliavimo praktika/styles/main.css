@@ -1,0 +1,82 @@
+section{
+  margin-top: 20px;
+  border:2px solid black;
+  
+}
+/*pozicija realiatyvioji*/
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+
+.rodytiSleptiMygtukas{
+  width: 100px;
+  height: 100px;
+  color: red;
+}
+/*section > *not(button.rodytiSleptiMygtukas){
+
+}*/
+.raudonasTekstas {
+  color: red;
+}
+
+.didelisTekstas {
+  font-size: 4rem;
+  ;
+}
+
+.centruotasTekstas {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-1 {
+  gap: 5px;
+}
+
+.gap-2 {
+  gap: 10px;
+}
+
+.kortele1 {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: beige;
+  width: 350px;
+}
+/*kortelei suteikiamas plotis,kad tekstas graziai luztu*/
+.kortele1>h3 {
+  text-align: center;
+  color: blue;
+}
+
+.kortele1>img {
+  width: 300px;
+  height: auto;
+}
+
+.kortele1>p {
+  text-align: justify;
+
+}
+
+#task2 {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  height: 350px;
+}

@@ -1,0 +1,122 @@
+@import url('https://necolas.github.io/normalize.css/');
+#gridPvz >div:nth-child(1){
+    background-color: aquamarine;
+    grid-area: 3 / 7 / 5 / 10;
+}
+#gridPvz >div:nth-child(2){
+    background-color: burlywood;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column-end: 5;
+    grid-row-end: 3;
+    /*z-index: 1;*/
+}
+#gridPvz >div:nth-child(3){
+    background-color: grey;
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
+#gridPvz >div:nth-child(4){
+    background-color: rgb(171, 154, 124);
+}
+#gridPvz >div:nth-child(5){
+    background-color: rgb(209, 204, 195);
+    align-items: center;
+}
+#gridPvz >div:nth-child(6){
+    background-color: rgb(136, 235, 159);
+    grid-column: 3 / 5;
+    grid-row: 2 / 5;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+   
+
+}
+#gridPvz >div:nth-child(7){
+    background-color: rgb(160, 112, 29);
+}
+#gridPvz{
+    display:grid;
+    font-size:5rem;
+    /*grid-template-columns:100px 50px 100px ;
+    grid-template-rows:50px 150px ;*//*repeat 50px 150px 50px 150px*/
+    grid-template: 
+    repeat(2, 50px 150px) /
+    repeat(3, 2fr 1fr 100px);
+    /*2fr 1fr 100px 2fr 1fr 100px 2fr 1fr 100px*/
+    gap: 5px 15 px;
+    /* 100 px ?% 100px 100px ?% 100px 100px ?% 100px*/
+    /*grid-auto-flow: column;*/
+    align-items:flex-start;
+    grid-auto-flow: row dense;
+}
+/*uzduotis klasika*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 10px;
+}
+.grid__item {
+  background-color: lightblue;
+  padding: 10vh 0;
+  text-align: center;
+}
+.grid__item:nth-child(1) {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+.grid__item:nth-child(2) {
+  grid-column: 3/5;
+}
+
+.item {
+  background-color: tomato;
+  width: 100%;
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  padding: 10vh 0;
+}
+
+/* Su Flexbox */
+
+.flex {
+  display: flex;
+  min-height: 50vh;
+}
+
+.left-side, .right-side {
+  width: 50%;
+}
+
+.right-side {
+  display: flex;
+  flex-wrap: wrap;
+}
+.right-side > * {
+  width: 100%;
+}
+
+.left-side, .right-bottom, .right-top {
+  display: flex;
+}
+
+#gridUz{
+  display:grid;
+  font-size:6rem;
+  /*grid-template-columns:100px 50px 100px ;
+  grid-template-rows:50px 150px ;*//*repeat 50px 150px 50px 150px*/
+  grid-template: 
+  repeat(2, 150px 150px) /
+  repeat(2, 150px 150px);
+  /*2fr 1fr 100px 2fr 1fr 100px 2fr 1fr 100px*/
+  gap: 5px 15 px;
+  /* 100 px ?% 100px 100px ?% 100px 100px ?% 100px*/
+  /*grid-auto-flow: column;*/
+  align-items:flex-start;
+  grid-auto-flow: row dense;
+}

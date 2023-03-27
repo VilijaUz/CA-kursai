@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex ir Grid</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#flex">Flex</a></li>
+                <li><a href="#grid">Grid</a></li>
+                <li><a href="#bgImages">bgImages</a></li>
+                <li><a href="#selectors">selectors</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="flex"><!--flex-->
+            <h1>Display Flex</h1>
+            <div><!--nuorodos-->
+                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-properties"
+                    target="_blank">Flex cheatsheet
+                </a>
+                <a href="https://flexboxfroggy.com/">Flex Froggy game</a>
+                <a href="http://www.flexboxdefense.com/">Flex Defence game</a>
+            </div>
+            <h2>Flex properties</h2>
+            <div>
+                <div>
+                    <h3>Parent element - container</h3>
+                    <ul>
+                        <li>Flex - direction: row(default),colum,row-reverse,colum-reverse</li>
+                        <li>flex-wrap:nowrap(default),wpar,wrap-reverse;</li>
+                        <li>flex-flow: flex-direction flex-wrap;apjungia</li>
+                        <li>justify-content:flex-start(default),flex-end,center,space-between,space-around,space-evenly;
+                        </li>
+                        <li>align-iteams: stretch(default);flex-start;flex-end;centr;baseline(atskiru eiluciu
+                            nustatymui);</li>
+                        <li>align-content:(viso turinio nustatymui)(no default- prioritetas jei naudojami
+                            abu:align-content ir
+                            align-iteams);flex-start;flex-end;strech;space-between;space-around;space-evenly;</li>
+                        <li>gap - row-gap colum-gap;</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Children element - flex iteam</h3>
+                    <ul>
+                        <li>order :number;(default -)</li>
+                        <li>align-self:auto;flex-start;flex-end;center;stretch;baseline;(elgiasi kaip align-iteams
+                            tik,kad pavieniams elementams)</li>
+                        <li>flex-grow:number;(default -);skaicius nurodo kokia dali vietos elementas uzims flex
+                            konteineryje</li>
+                        <li>flex-shrink:number;(default -1;skaicius nurodo kiek elementas sumazes)</li>
+                        <li>flex-basis:size;(default -auto)nurodo kaip bus paskirstyta ju viduje esancios nepanaudota
+                            vieta,turinys;</li>
+                        <li>flex:flex-grow; flex-shrink;flex-basis(eiliskumas)</li>
+                    </ul>
+                </div>
+                <div class="flexTest"> <!--flex testavimas-->
+                    <!--div.kvadratas{$}*12-->
+
+                    <div class="kvadratas iteamFlex1">1</div>
+                    <div class="kvadratas order2">2</div>
+                    <div class="kvadratas iteamFlex1">3</div>
+                    <div class="kvadratas iteamFlex2 ">4</div>
+                    <div class="kvadratas order1">5</div>
+                    <div class="kvadratas iteamFlex2 alignSelf ">6</div>
+                    <div class="kvadratas">7</div>
+                    <div class="kvadratas order1">8</div>
+                    <div class="kvadratas">9</div>
+                    <div class="kvadratas">10</div>
+                    <div class="kvadratas">11</div>
+                    <div class="kvadratas">12</div>
+                </div>
+            </div>
+
+        </section>
+        <section> <!--grid-->
+            :(
+
+        </section>
+        <section><!--bg images-->
+            <h1>Background images</h1>
+            <div class="fonas1">
+                <h2>background-image</h2>
+                <ul>
+                    <li>background-image:url('nuoroda/kelias')</li>
+                    <li>background-size:cover;contain;</li>
+                    <li>background-position:top ir kt.</li>
+                    <li>background-repeat:repeat;no-repeat;</li>
+                    <li>background-attachment:fixed,scroll;local</li>
+                    <li>background-clip:text;border-box;padding-box;content-box;(retai)</li>
+                </ul>
+            </div>
+            <div class="fonas2">
+                <img src="https://media.lrytas.lt/images/2019/12/31/164849680-9c9a4ce3-4fd9-4ca8-9b49-4117e97fd18b.jpg"
+                    alt="bgImage">
+                <div class="z-index"></div>
+                <h2>img ir positions</h2>
+                <p>
+                    div-e susikuriame img tag'a,kuriam suteikiame absoliucia pozicija,negatyvu z-index-a ir ploti bei
+                    auksti padarome po 100%
+                </p>
+                <p>suteikia div-ui norima aukti ir relatyviaja pozicija.Suteikiame div'ui permatoma spalvos fona</p>
+            </div>
+
+        </section>
+        <section><!--selectors maybe-->
+
+        </section>
+    </main>
+
+</body>
+
+</html>

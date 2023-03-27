@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primityviu duomenu tipu metodai</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <section id="metodai">
+      <h1>Metodai</h1>
+      <p>
+        Metodai -jau sukurtos funkcijos,kurios priklauso kazkokiam
+        specifiniam elementui.
+      </p>
+      <p>
+        Metodai skirti tam,kad palengvintu programuotoju darba.
+      </p>
+    </section>
+
+    <section id="booleanMetodai">
+      <h1> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean"
+          target="_blank">Boolean</a></h1>
+      <h3> Metodai</h3>
+      <ul>
+        <li>toString() -pavercia i stringa tipo kintamaji</li>
+        <li>value(of) - grazina elemento  reiksme</li>
+      </ul>
+
+    </section>
+    <section id="numberMetodai">
+      <h1><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
+          target="_blank">Number</a></h1>
+      <h3>Properties</h3>
+      <ul>
+        <li>Number.MAX_SAFE_INTEGER</li>
+        <li>Number.MAX-VALUE</li>
+        <li>Number.POSITIVE_INFINITY</li>
+        <li>Number.MIN_SAFE_INTEGER</li>
+        <li>Number.MIN_VALUE</li>
+        <li>Number.NEGATIVE_INFINITY</li>
+        <li>Number.EPSILON</li>
+        <li>Number.NaN</li>
+
+      </ul>
+      <h3>Methods:</h3>
+      <ul>
+        <li>Number.isInteger() - ar sveikas skaicius?</li>
+        <li>Number.isNaN</li>
+        <li>Number.parseInt('')</li>
+        <li>Number.parseFloat('')</li>
+        <li>.toFixed()</li>
+        <li>...</li>
+      </ul>
+
+    </section>
+    <section id="mathMetodai">
+      <h1><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math"
+          target="_blank">Math</a></h1>
+      <h3>Properties</h3>
+      <ul>
+        <li>Math.PI</li>
+        <li>...</li>
+      </ul>
+      <h3>Methods</h3>
+      <ul>
+        <li>Math.abs()-kad gautusi teigiamas skaicius</li>
+        <li>Math.cbrt()</li>
+        <li>Math.sqrt()</li>
+        <li>Math.ceil()</li>
+        <li>Math.round()</li>
+        <li>Math.floor()</li>
+        <li>Math.hypot() -atstumas tarp dvieju tasku,kai duotos kordinates(geometrinis vidurkis)</li>
+        <li>Math.min()</li>
+        <li>Math.rmax()</li>
+        <li>Math.pow() -laipsnio kelimas arba **2</li>
+        <li>Math.trunc() ....naikina uz kablelio?</li>
+        <li>Math.random() -grazina....</li>
+      </ul>
+    </section>
+    <section id="stringMetodai">
+
+
+      <h1> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes"
+          target="_blank">String</a></h1>
+      <h3>Properties</h3>
+      <ul>
+        <li>.length</li>
+      </ul>
+      <h3>Methods</h3>
+      <ul>
+        <li>.at()-grazina simboli nurodytoje pozicijoje, console.log('zodis')
+
+        </li>
+        <li>.charAt() <a href="https://asecuritysite.com/coding/asc2" target="_blank">string===charArray,pvz'rokas'[2]</a></li>
+        <li>.concat() - prideda prie vieno stringo kita</li>
+        <li>.endsWith() - patikrina galune</li>
+        <li>.startsWith() - tikrinti ar prasiseda tavo stringas kazkokia skaiciu seka</li>
+        <li>.includes() - patikrina ar tavo stringe yra kazkoks raktinis zodis</li>
+        <li>.indexOf() - grazins grazins pozicija skaiciu,kurioje prasideda ta seka</li>
+        <li>.lastIndexOf() </li>
+        <li>.compare() - tikrinti lietuvybiu raides,21 paskaita|'a'.locale.compare(ą)-palygini kuris simbolir t.b.
+          velesnis</li>
+        <li>.padStart() -duodi zodi ir nurodai kiek simboliu jis uzims,pvz"haha hihi.......</li>
+        <li>.padEndt()</li>
+        <li>.repeat() - pries ka,ir kiek kartu kartoti</li>
+        <li>.slice()</li>
+        <li>.split() - grazintas masyvas zodziu atskirtu per kableli?</li>
+        <li>.toLowerCase()</li>
+        <li>.toLocaleLowerCase()</li>
+        <li>.toUpperCase()</li>
+        <li>.toLocaleUpperCase()</li>
+        <li>.trim()</li>
+        <li>.trimStart()</li>
+        <li>.trimEnd()</li>
+        <li>.toString() -ar stringas yra stringas</li>
+
+        <li>.match( -)reikia regex(palikti ateiciai) </li>
+        <li>.matchAll() - reikia regex(palikti ateiciai)</li>
+        <li>.replace() - reikia regex(palikti ateiciai)
+          let zodziai='labas rytas,grazus rytas,ankstyvasrytas' ;
+        zodziai.replace('rytas','vakaras');</li>
+        <li>.replaceAll() - reikia regex(palikti ateiciai) </li>
+        <li>.search() - iesko ar yra kokia seka</li>
+
+      </ul>
+
+    </section>
+    <section id="milkPrice">
+			<h1 >Milk Price <span id="apskaiciuotiKaina"></span></h1>
+			
+			<form id="milkPriceForma">
+				<input 
+        type="number" 
+        name="milk" 
+        id="milk" 
+        placeholder="iveskite pieno kaina">
+			
+				<input 
+        type="submit" 
+        value="suskaiciuoti">
+			</form>
+     
+		</section>
+    <section>
+      <h1>Kuro kaina</h1>
+      <form 
+      id="kuras"> <input 
+      type="number" 
+      name="kaina"
+       id="kaina"
+        step="0.01"
+         placeholder="įveskite litro kainą">
+          <input 
+          type="number"
+          name="kiekis"
+           id="kiekis"
+            step="0.1"
+             placeholder="įveskite litrų kiekį">
+              <input 
+              type="submit", 
+              value=pateikti>
+               <h1 id="suma"> </h1>
+               </form>
+    </section>
+  </main>
+</body>
+
+</html>

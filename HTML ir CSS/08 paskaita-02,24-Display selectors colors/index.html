@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displays,Colors,Positions,Selectors</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="pageLinks">
+            <a href="#displays">displays</a>
+            <a href="#colors">colors</a>
+            <a href="#position">position</a>
+            <a href="#uzduotys">uzduotys</a>
+
+        </div>
+    </header>
+    <main>
+        <selection id="displays" class=""> <!-- Displays-->
+            <h1>Displays</h1>
+            <ul>
+                <li>inline</li>
+                <li>block</li>
+                <li>inline-block</li>
+            </ul>
+            <div>
+                <h3>inline</h3>
+                <p>
+                    Elementai issidesto toje pacioje eiluteje ,bet negali tureti plocio ir aukcio nustatymu.Ju dydis
+                    priklauso nuo teksto dydzio,turinio.
+                </p>
+                <div>
+                    <div class="kvadratas inline">1 inline</div>
+                    <div class="kvadratas inline">2 inline</div>
+                    <div class="kvadratas inline">3 inline</div>
+                    <div class="kvadratas inline">4 inline</div>
+                </div>
+            </div>
+            <div>
+                <h3>Block</h3>
+                <p>
+                    Elementai issidesto atskirose eilutese.Gali priimti plocio ir aukscio nustatymus.Jei plotis ir
+                    aukstis nenurodyti,tai turinys kontroliuoja elemento auksti.
+                </p>
+                <div>
+                    <div class="kvadratas block">1 block Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+                        dignissimos distinctio deserunt dolorum dicta id rerum ex numquam tenetur aperiam.</div>
+                    <div class="kvadratas block">2 block</div>
+                    <div class="kvadratas block">3 block</div>
+                    <div class="kvadratas block">4 block</div>
+                </div>
+                <div>
+                    <h3>inline-block</h3>
+                    <p>
+                        Elementai issidesto vienas salia kito.Gali priimti plocio ir aukscio nustatymus.Nesuteikus
+                        plocio nustatymo -elementas neissiplecia iki ekrano krasto. elementas neuzima viso galimo
+                        plocio.
+                    </p>
+                    <div>
+                        <div class="kvadratas inline-block">1 inline-block</div><!--
+                        -->
+                        <div class="kvadratas inline-block">2 inline-block</div>
+                        <div class="kvadratas inline-block">3 inline-block</div>
+                        <div class="kvadratas inline-block">4 inline-block</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </selection>
+        <section id="colors" class=""><!-- Colors-->
+            <h1>Colors</h1>
+            <ul>
+                <li>color name - ~150</li>
+                <li>rgb - red green blue - 256^3</li>
+                <li>hex# - hexidecimal (sesioliktainis) -00-ff-256^3</li>
+                <li>hsl</li>
+                <li>hwb</li>
+            </ul>
+            <div>
+                <h3>Color names</h3>
+                <p>
+                    uzvadintu spalvu yra ~140.Norint pritaikyti spalva reikia nurodyti jos pavadinima.PVZ.:orange,khaki
+
+                </p>
+                <div>
+                    <h3>RGB(a) (red green blue (alpha)</h3>
+                    <p>
+                        naudojant RBG koda,kiekviena spalva susideda is 3 pagrindiniu spalvu misinio.Vienos spalvos
+                        kiekis nurodomas nuo 0 iki 255(max)Pvz.: color: rgb(0,255,0)
+                    </p>
+                    <p>
+                        rbga - red green blue ALPHA - nurodo spalvos permatomuma,priskiriant skaiciu nuo 0 iki
+                        1,zingsnis 0,001
+                        0- pilnai permatoma,1-spalva pilnai matoma(tarsi nebutu jokio ALPHA nustatymo)pvz.: rbga(0,
+                    </p> 255, 0, 0,501)
+                </div>
+                <div>
+                    <h3>Hex kodas (#)</h3>
+                    <p>
+                        Naudojant Hex koda kiekv. spalva susideda is3 pagr.spalvu misinio.Vienos spalvos kiekis
+                        nurodomas israiska nuo 00 iki ff,pvz.:color:#00ff00 #32cdff
+                    </p>
+                    <p>
+                        norint nuroduti spalvos permatomuma naudojant hex spalvos pavidala,gale reikia nurodyti 2
+                        papildomus simbolius- 00-visiskai permatoma,ff - pilnai matoma.pvz.: color:#00ff009a #32bdff00;
+
+                    </p>
+                    <p> Hex koda galima trumpinti nurodant dvigubai maziau simboliu.Trumpinimas galima tik tuomet,jei
+                        yra du vienodi simboliai is eiles -juos galima trumpinti i viena simboli,pvz.: color:#0f0
+                        (vietoj #00ff00) #3bf (vietoj #32bdff)
+                    </p>
+                    <p>
+                        Kaip veikia Hex? 00 - 0 ; 01-1;09-9;0a -10;0b - 11;0c-12;0d-13;0e -14,0f-16;10-16;
+                        11-17;..;19-25;10a -26;..;1f - 31;20-32;9f -???;a0....;ff-255;
+                    </p>
+                    <h2>Gradient</h2>
+                    <ul>
+                        <li>Linear</li>
+                        <li>Radial</li>
+                        <li>Conic</li>
+                        <li>repeating</li>
+                    </ul>
+                    <p>
+                        Norint naudoti spalvu gradientus,reikia pasirinti spalvos stiliu ir jo nustatymuose nurodyti,kad
+                        naudojamas kazkuris gradientas ;background-color:linear-gradient(nustatymai);
+                    </p>
+                    <p>
+                        nustatymai susideda min is 3 daliu:kur prasideda gradiento piesimas;i kuriaa puse piesimas
+                        vyksta;spalva1;spalva2;
+                    </p>
+                    <p>
+                        nurodant spalvas galima nurodyti % reiksme (nuo kur iki kur ji uzims)
+                    </p>
+
+                </div>
+                <div>
+                    <h>LT</h>
+                    <div class="veliava">
+                        <div class="veliavosD veliavosSpG"></div>
+                        <div class="veliavosD veliavosSpZ"></div>
+                        <div class="veliavosD veliavosSpR"></div>
+                    </div>
+                    <div class="veliava">
+                        <div class="veliavosD veliavosSpB"></div>
+                        <div class="veliavosD veliavosSpR"></div>
+                        <div class="veliavosD veliavosSpB"></div>
+                    </div>
+                    <div class="veliava">
+                        <div class="veliavaD veliavosF"></div>
+                    </div>
+                </div>
+
+        </section>
+        <section><!--uzduotys-->
+            <div class="task1">
+                <h1>LT</h1>
+                <div class="veliava lt">
+                    <div class="yellowBg"></div>
+                    <div class="greenBg"></div>
+                    <div class="redBg"></div>
+                </div>
+                <h2>FR</h2>
+                <div class="veliava fr ">
+                    <div class="inline-block blueBg"></div>
+                    <div class="inline-block veliavosSpB"></div>
+                    <div class="inline-block redBg"></div>
+                </div>
+            </div>
+
+            <h1>Be</h1>
+            <div class="veliavabe"></div>
+
+        </section>
+        <section id="position" class=""><!-- Positions-->
+            <h1>Positions</h1>
+            <ul>
+                <p>nustacius bet kuria (apart static) elemantui galime suteikti: top,right,bottom,left ir z-index
+                    stilius.</p>
+                <li>static</li>
+                <li>relative </li>
+                <li> absolute</li>
+                <li> fixed</li>
+                <li> sticky</li>
+            </ul>
+            <div>
+                <h2>Static</h2>
+                <div>
+                    <p>Static pozicija yra default pozicija visu elementu.Del to ji nieko nedaro,net nesuteikia
+                        galimybes naudotis top ir kt.</p>
+                    <div class="kvadratas inline-block static">Static 1</div>
+                    <div class="kvadratas inline-block static top20 right50">Static 2</div>
+                    <div class="kvadratas inline-block static">Static 3</div>
+                    <div class="kvadratas inline-block static">Static 4</div>
+                </div>
+
+                <div>
+                    <h2>Relative</h2>
+                    <p>Relative pozicija suteikia galimybe naudoti top ir kt. stiliais. Relatyviosios pozicijos
+                        Top,right,left ir bottom nustatymai pastumia elementa per nurodyta atstuma,nuo nurodytos
+                        krastines.Elementas turintis Relativ
+                        pozicija yra jo viduje esancio elemento,su absoliuciaja pozicija,riba.</p>
+                    <div class="kvadratas inline-block static">Relative 1</div>
+                    <div class="kvadratas inline-block static top20 right50">Relative 2</div>
+                    <div class="kvadratas inline-block relative top20">Relative 3</div>
+                    <div class="kvadratas inline-block relative right50">Relative 4</div>
+                </div>
+
+                <div class="relative">
+                    <h2>Absolute</h2>
+                    <p>Elementas turintis absoliuciaja pozicija-iseina is puslapio tekmes(netenka savo pozicijos
+                        elementuu isdestymo eileje.Suteikia galimybe naudoti top ir kt.stiliais.Absoliucios pozicijos
+                        top it kt.nustatymai pastumia elementa nuo jo protevinio elemento krastu,jei sis turi
+                        relatyviaja pozicija.</p>
+                    <div class="kvadratas inline-block static">Absolute 1</div>
+                    <div class="kvadratas inline-block absolute left30 top20">Absolute 2</div>
+                    <div class="kvadratas inline-block static">Absolute 3</div>
+                    <div class="kvadratas inline-block static">Absolute 4</div>
+                </div>
+                <div>
+                    <h2>Fixed</h2>
+                    <p> Elementas iseina is puslapio tekmes,netenka savo pozicijos elementu tekmeje.Jis fiksuojasi
+                        nurodytoje pozicijoje ir skrolinant puslapi ,juda kartu.Fiksuotos pozicijos nustatymai rodo kur
+                        bus elementas prilipes ekrane.</p>
+                    <div class="kvadratas inline-block fixed right50 bottom10">f 1</div>
+                    <div class="kvadratas inline-block static top20 right50">f 2</div>
+                    <div class="kvadratas inline-block fixed">f 3</div>
+                    <div class="kvadratas inline-block sticky right50">f 4</div>
+                </div>
+                <h2>Sticky</h2>
+                <p>Sticky elementas suteikia galimybe naudotis stiliais ir nustatymai top ir kt. nurodo per koki atstuma
+                    sticky elementas turi prilipti nuo ekrano krastiniu ir judeti kartu kol iseinama is sticky tevinio
+                    elemento ribu </p>
+                <div class="tallDiv">
+                    <div class="kvadratas inline-block static">Sticky 1</div>
+                    <div class="kvadratas inline-block static top20 ">Sticky 2</div>
+                    <div class="kvadratas inline-block sticky top20 ">Sticky 3</div>
+                    <div class="kvadratas inline-block sticky right50">Sticky 4</div>
+                </div>
+
+                <div>
+                    <h2>Z-INDEX</h2>
+                    <p> </p>
+                    <div class="kvadratas inline-block static">z-index 1</div>
+                    <div class="kvadratas inline-block relative top20 right50 z-index "></div>
+                    <div class="kvadratas inline-block z-index ">z-index 3</div>
+                    <div class="kvadratas inline-block z-index ">z-index 4</div>
+                </div>
+            </div>
+
+        </section>
+        <section><!-- Selectors-->
+
+
+        </section>
+    </main>
+
+</body>
+
+</html>

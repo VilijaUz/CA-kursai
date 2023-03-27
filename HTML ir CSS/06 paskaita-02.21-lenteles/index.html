@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./images/cloud.PNG">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Home</a>/</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </header>
+    <main>
+        <section id="lentele_HTML"><!--pavyzdinis tagu sarasas-->
+            <h1>lenetes tag'ai</h1>
+            <ul>
+                <li>lenetes tag'as</li>
+                <li>thead -lenteles virsus(table head) skirtas stulpeliu pavadinimams</li>
+                <li>tbody - lentele kunas(table body) skirtas duoomenims</li>
+                <li>tfoot - lentele apacia  ( table foot) lenteles apibendrinimas</li>
+                <li>tr- lenteles eilute(table row)</li>
+                <li>td - lentele duomuo (table data)</li>
+                <li>th - lentele stulpelio antraste (table deading)</li>
+                <li>caption -lenteles pavadinimas</li>
+                <li>colgroup -stulpeliu grupe</li>
+                <li>col -stulpelis </li>
+            </ul>
+            <div> <!--pavyzdine lentele-->
+                <h1>Lentele</h1>
+                <table border>
+                    <caption>Lentele</caption>
+                    <colgroup>
+                        <col span="2" style="background-color: aqua;">
+                        <col style="background-color: blueviolet;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="colorRed"></th>
+                        <th class="colorRed">vardas</th>
+                    <th class="colorRed" >pavarde</th>
+                    <th class="colorRed">amzius</th>
+
+
+                    <th>vedes</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Rokas</td>
+                        <td>Banaitis</td>
+                        <td>26</td>
+                        <td>false</td>
+
+                    </tr>
+                    <tr>
+                        <td>Petras</td>
+                        <td>Petrauskas</td>
+                        <td>50</td>
+                        <td>false</td>
+
+                    </tr>
+                    <tr >
+                        <td >Jonas</td>
+                        <td>Jonauskas</td>
+                        <td>10</td>
+                        <td>false</td>
+
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+                <tr>
+                    <td colspan="3">amziu vidurkis</td>
+                    <td >28.6</td>
+                </tr>
+
+                </table>
+                <hr>
+            </div>
+            <div><!--uzduoties lentele--> <!--pavyzdine lentele-->
+                <table>
+                    <caption></caption>
+                    <colgroup>
+                        <col span="4" style="background-color: rgb(201, 215, 215);">
+                        <col style="background-color: rgb(131, 122, 140);">
+                        <col class="'textCenter";>
+                    </colgroup>
+                    <h1>Lentele</h1>  
+                    <thead>
+                   
+                        <tr> 
+                            <th>No</th>
+                            <th>Full Name</th>
+                            <th>Position</th>
+                            <th> Salary</th>
+                            <th> Type</th>
+                           
+                        </tr>
+                        </thead>
+                    <tbody>
+                        <tr >
+                            <td>1</td>
+                            <td>Martynas</td>
+                            <td>vadovas</td>
+                            <td>5000 eur</td>
+                            <td rowspan="4"class="'textCenter" >Company</td> 
+                            
+                         </tr>
+                        <tr > 
+                            <td>2</td>
+                            <td>Laurynas</td>
+                            <td>gamybos vadovas</td>
+                            <td>3000 eur</td>
+                            
+                        </tr>
+                        <tr> 
+                            <td>3</td>
+                            <td>Tadas</td>
+                            <td>kokybes vadovas</td>
+                            <td>3000 eur</td>
+                            
+                            
+                        
+                        </tr>
+                        <tr> 
+                            <td>4</td>
+                            <td>Lukas</td>
+                            <td>programuotojas</td>
+                            <td>1000 eur</td>
+                            
+                            
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">viso</td>
+                            <td>3000 eur</td>
+                           
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </div>
+            <hr>
+            <div>
+                <h1>CSS Selectors</h1>
+                <ul>
+                    <li>element -elemento selektorius-pvz:p</li>
+                    <li>class - klases selektorius,pvz.: .className</li>
+                    <li>id -id selektorius -pvz.:#ID_name</li>
+                    <li>multiple -daugelio elementu-pvz.: div, .pavadinimas</li>
+                    <li>??? - elementai elemento viduje (daznai naudojama)- pvz.: div p</li>
+                    <li>????- vaikiniai elemento elementai(daznai naudojama) pvz.: div > p</li>
+                    <li>??? - elementas su klase arba klasemis -pvz.: div.hihi   .hihi.haha   .hihi, .haha    div.hihi#idvardas</li>
+                     <li> everything - visko-pvz.: *</li>
+                    <li>next element -elementas einanatis uz elemento -pvz.: div + section</li>
+                    <li>next elements - elementai einantys uz elemento -pvz.;input ~ label</li>
+                    <li>&check - varnele</li>
+                </ul>
+            </div>
+
+        </section>
+        <div class="hihi haha" id="idvardas">
+            <p>viduje divo </p>
+            <span>
+                <p>giliai divo viduje</p>
+                <section>
+                    <p>namas</p>
+                </section>
+            </span>
+        
+        </div>
+        <p>ne divo viduje</p>
+        <section class="korteles">
+        <div>
+            <img src="" alt="" class="">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+    <hr>
+    <section class="fonasBlack">
+    <h1 class="textCenter"> PROMOTION PLANS </h1>
+    
+    <table class="task1">
+        <thead>
+        <tr>
+            <th class="fonasBaltas">Compare all plans</th>
+            <th class="fonasGeltonas">Starter</th>
+            <th class="fonasRaudonas">Advance</th>
+            <th class="fonasBaltas">Enterprise</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr >
+                <td>1st  Month Managment</td>
+                <td>$400</td>
+                <td>$900</td>
+                <td>$1200</td>
+                            
+         </tr>
+         <tr >
+            <td>Following month</td>
+            <td class="textSize">$300</td>
+            <td class="textSize">$600</td>
+            <td class="textSize">$800</td>
+                        
+     </tr>
+         <tr > 
+         <td>Devilery time</td>
+         <td >1 month</td>
+         <td>3 month</td>
+         <td>6 month</td>
+                     
+        </tr>
+        <tr > 
+            <td>Support</td>
+            <td>-</td>
+            <td>&checkmark;</td>
+            <td>&checkmark;</td>
+                        
+          </tr>
+        <tr > 
+        <td>Sertificate</td>
+        <td>-</td>
+        <td>&checkmark;</td>
+        <td>&checkmark;</td>
+                    
+      </tr>
+      <tr > 
+        <td>Gurantied..........</td>
+        <td>18</td>
+        <td>20</td>
+        <td>28</td>
+                    
+      </tr>
+      <tr > 
+        <td></td>
+        <td class="btn">Buy now</td>
+        <td class="btn">Buy now</td>
+        <td class="btn">Buy now</td>
+                    
+      </tr>
+    </tbody>
+    </table>
+</section>
+
+    </main>
+    
+</body>
+</html>

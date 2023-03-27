@@ -1,0 +1,83 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+/*jusu kodas*/
+.hide{
+    display: none;
+}
+body{
+    color:rgb(18, 18, 18);
+}
+.paveikslelioDydis{
+    width:200px;
+    height:auto;
+}
+.marginsPaddings{
+    margin: 50px; /* visom kraštinėm po 50*/
+    margin: 50px 20px; /* viršuj apačiai po 50 | dešinei kairei po 20 */
+    margin: 50px 20px 10px; /* viršuj 50 | dešinei kairei po 20 | apačiai 10*/
+    margin: 50px 20px 10px 5px; /* top 50 | right 20 | bottom 10 | left 5*/
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+  aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+  }
+ .shadow{
+   box-shadow: 1px 1px 2px rgba(131, 79, 79, 0.018);
+}
+body {
+    background: #fff linear-gradient(to bottom, #3f567c, #b5ccc6) no-repeat;
+    font-family: Open Sans, sans-serif;
+  }
+  
+  menu {
+    padding-left: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .window {
+    margin: auto;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .separator {
+    border-top: 1px solid #111111;
+    border-bottom: 1px solid #353535;
+    margin: 20px;
+  }
+  .window {
+    margin: auto;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .window .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background: #24282c;
+    transition-duration: 0.3s;
+    color: #ddd;
+  }
+  .content-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }

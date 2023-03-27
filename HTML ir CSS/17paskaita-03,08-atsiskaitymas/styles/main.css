@@ -1,0 +1,230 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+body {
+    background-color: white;
+    border: 1px solid green;
+    /*overflow: hidden;
+    overflow-x:hidden;*/
+   
+}
+
+header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    height: 150px;
+    font-size: 30px;
+    background-color: white;
+    font-family: 'Varela Round';
+    letter-spacing: 0.05em;
+    align-items: center;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header nav i {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+header a {
+    font-size: 20px;
+    color: grey;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 1px;
+    border: none;
+    display: inline-block;
+}
+
+.colorPink {
+    color: #FF3998;
+    max-width: 70%;
+}
+/*
+img {
+  z-index: 1;
+ background-color: drop-shadow(0px 0px 70px rgba(231, 22, 151, 0.5));
+}
+*/
+.fonasZaislo {
+    /*background-image:radial-gradient(circle at center ,#d01871, transparent); */
+    border-radius: 50px;
+    border: none;
+    background-size: cover;
+}
+.fonasZaislo img{
+   
+    right: -30px;
+    width: 200px;
+    height: 300px;
+    top: 0px;
+
+}
+
+
+header .logo {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px
+}
+
+#launcingSoon {
+    color: black;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.paragr {
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 70%;
+}
+
+.bold {
+    font-weight: bold;
+    font-family: 'Fantasy';
+    font-size: 70px;
+    max-width: 70%;
+}
+
+button {
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 20px 40px;
+    background-color: white;
+    border: 5px solid #FF3998;
+    border-color: linear-gradient(#FF3998, #52072c);
+}
+
+#kvadratas {
+    padding: 200px 300px 30px 30px;
+    height: 200px;
+    width: 80%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: linear-gradient(150deg, #FF3998, #b48d44, #10ca3c), #FF8139;
+}
+
+#kvadratas p {
+    padding: 5px;
+    text-align: left;
+}
+
+#logotipai {
+    display: flex;
+    justify-content: space-around;
+    color: grey;
+    font-size: 30px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    padding: 100px 30px;
+}
+
+#leSuper {
+    color: black;
+    font-size: 50px; 
+    padding-bottom: 100px;
+    padding-left: 30px;
+    overflow: hidden;
+    min-width: 200px;
+   
+}
+
+.korteles {
+    display: flex;
+    overflow: scroll;
+    align-items: start;
+    background-color: rgb(195, 184, 184);
+    color: rgb(70, 66, 66);
+    box-sizing: border-box;
+    padding: 0px 50px;
+    font-size: 5px;
+    justify-content: space-between;
+    gap: 30px;
+    border-radius: 25px;
+    flex-shrink: 0;
+    overflow: scroll;
+}
+
+#leSuper p span.last-word {
+    text-decoration: underline;
+}
+
+table {
+    font-size: 20px;
+}
+
+.leSuper th:first-child {
+    color: orange;
+    font-size: 15px;
+}
+
+tbody tr:first-child {
+    color: black;
+    font-size: 30px;
+}
+
+footer {
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.logo i {
+    padding: 10px;
+}
+
+footer p:first-child {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    header nav ul li {
+        display: none;
+    }
+
+    header nav i {
+        display: block;
+    }
+    .korteles{
+        width: 600px;
+        overflow: scroll;
+    }
+    .fonasZaislo img{
+        position: absolute;
+        right: -30px;
+        width: 200px;
+        height: 300px;
+        top: 0px;
+    
+    }
+}
