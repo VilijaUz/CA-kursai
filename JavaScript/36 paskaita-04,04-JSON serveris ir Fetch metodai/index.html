@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON serveris ir Fetch metodai</title>
+  <script src="./scripts/main.js" type="module"></script>
+ <link rel="stylesheet" href="./styles/main.css">  
+  <!-- <script src="https://kit.fontawesome.com/2d12da6bae.js" crossorigin="anonymous"></script> --> -->
+</head>
+<body>
+  <!-- // json-server --watch data.json / JSONLint -patikrinti ar validus-->
+  <main>
+    <section id="newCard">
+      <form >
+        <input type="text" name="vardas" id="vardas" placeholder="Iveskite varda...">
+        <input type="text"name="pavarde" id="pavarde" placeholder="Iveskite pavarde...">
+        <input type="number" step="1" name="amzius" id="amzius" placeholder="Iveskite amziu...">
+        <div>
+          <label for="vedes">Ar esi vedes/istekejusi</label>
+          <input type="checkbox" name="vedes" id="vedes" >
+        </div>
+        <div>
+
+    <label for="vyras">Vyras</label>
+    <input type="radio" name="lytis" id="vvyras" value="vyras"><br>
+    <label for="moteris">Moteris</label>
+    <input type="radio" name="lytis" id="moteris" value="moteris"><br>
+   </div>
+   <input type="url" name="profileImage" id="profileImage" placeholder="Pateikite savo nuotrauka..">
+   <input type="submit" value="Pateikti">
+      </form>
+    </section>
+
+    <section id="Cards">
+      <h1>All Cards</h1>
+      <div id="allCards">
+        <div class="card">
+          <h1>Vardas Pavarde</h1>
+          <img src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg" alt="foto">
+          <p>Amzius: skaicius</p>
+          <p>Seimyninis statusas:vedes/istekejusi</p>
+          <button>Delete this card</button>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,15 @@
+#allCards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card{
+  width:200px;
+  height: 300px;
+  border: 1px solid black;
+}
+.card >img{
+  width:100% ;
+  height: auto;
+  object-fit: contain;
+}

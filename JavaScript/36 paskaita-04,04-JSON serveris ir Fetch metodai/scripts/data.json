@@ -1,0 +1,23 @@
+{
+  "zmones": [],
+  "masinos": [
+    {
+      "id": 1,
+      "marke": "Audi",
+      "modelis": "pp",
+      "metai": 2000
+    },
+    {
+      "id": 3,
+      "marke": "Fiat",
+      "modelis": "xx",
+      "metai": 2009
+    },
+    {
+      "marke": "BMW",
+      "modelis": "6",
+      "gamybosMetai": 2020,
+      "id": 4
+    }
+  ]
+}
