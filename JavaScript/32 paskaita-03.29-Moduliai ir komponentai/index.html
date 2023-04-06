@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moduliai ir Komponentai</title>
+  <script src="./scripts/main.js" type="module"></script>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <main>
+    <section id="moduliai">
+      <h1>Moduliai</h1>
+      <p>
+        Moduliai(moduliarizacija)-kazkokiu funciju/kintamuju/klasiu ...
+        laikymas atskiruose failuose ir ju export'avimas ir import'avimas <br>
+        Moduliai naudojami tam,kad visoko nelaikyti viename faile,kas projektui
+        pleciantis gali tapti labai sudetinga susigaudyti faile.
+      </p>
+      <p>
+        Export - suteikiama galimybe kazkokioms funkcijoms/kintamujiesiems/klasems ...
+        buti pasiekiamiems is kitu failu. <br>
+        export default name - eksportuojamas pagrindinis failo elementas.
+        Gali buti tik vienas defaultinis export'as per viena faila.
+        export{name1,name2,....}-eksportuojami papildomi elementai.Galima eksportuoti
+        kiek nori,juos rasant i {} ir atskiriami kableliais.
+      </p>
+      <p>
+        Import-suteikiama galimybe pasiekti kazkokias funkcijas/kintamuosius/klases ...
+        is kitu failu. <br>
+        import anyNameYouWant from './fileRouteAndFile'- importuojamas pagrindinis nurodyto
+        failo elementas.Ji galime importuoti kokiu tik patys norime vardu.
+        import {name1,name2,....} from'./fileRouteAndFile'-importuojami TIK nurodyti
+        papildomi elementai.
+        Importuojant papildomus elementus,reikia nurodyti ju SPECIFINIUS vardus. <br>
+        import{ name1 as simethingElse,name2,...} from'./fileRouteAndFile'- po importuojamo
+        importuojamo elemento pavadinimo parasius zodeli "as",galima nurodyti kokiu kitu
+        pavadinimu i ta elementa siame faile kreiptis. <br>
+        import anyNameYouWant,{name1 as somethingElse,name2,.. } from'./fileRouteAndFile -
+        galima importuoti IR default,IR paprasta,IR paprasta pervadinta.
+
+      </p>
+    </section>
+    <section id="komponentai">
+      <h1>Komponentai (ne react)</h1>
+      <p>
+        Komponentas - puslapio sudedamoji dalis.
+      </p>
+    </section>
+
+    <section id="test">
+      <div class="card">
+        <img
+          src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg"
+          alt="cat">
+        <div>
+          <h1>Pavadinimas</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quisquam quis iste a odio nulla inventore
+            est, magni minus sint.
+          </p>
+        </div>
+      </div>
+      <ul class="vienaKlase kitaKlase">
+        <li class="liKlase">Pirmas</li>
+        <li class="liKlase">Antras</li>
+        <li class="liKlase unikaliKlase" >Ne PIRMAS</li>
+        <li class="liKlase" > Kazkelintas</li>
+        <li class="liKlase" > Paskutinis maybe</li>
+
+      </ul>
+    </section>
+
+
+    <section id="image">
+      <img src="" alt="">
+
+    </section>
+    <section id="list">
+
+    </section>
+  </main>
+
+</body>
+
+</html>

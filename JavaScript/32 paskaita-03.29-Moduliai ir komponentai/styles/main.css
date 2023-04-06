@@ -1,0 +1,69 @@
+section#moduliai{
+  display: none;
+}
+.raudonasTekstas{
+  color: red;
+}
+.centruotasTekstas{
+  text-align: center;
+  vertical-align: middle;
+}
+.didelisTekstas{
+  font-size: 5rem;
+}
+
+.card{
+  height:500px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+
+}
+.card >img{
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+.card >div{
+padding: 20 px 10px;
+}
+.card >h1{
+  text-align: center;
+}
+.card >p{
+  text-align: center;
+}
+@media(min-width:992px){
+  .didelisTekstas{
+    font-size: 5rem;
+  }
+}
+ol, ul {
+  list-style: none; /* nuimame žymėjimo ženklus */
+  padding: 0; /* nustatome vidinį padding'ą kaip 0 */
+  margin: 0; /* nustatome išorinį margin'ą kaip 0 */
+}
+select {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 2px #66afe9;
+  border-color: #66afe9;
+}
+
+option {
+  color: #333;
+  background-color: #fff;
+  font-size: 16px;
+}
