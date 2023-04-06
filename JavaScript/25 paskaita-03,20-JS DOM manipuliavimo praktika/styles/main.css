@@ -76,7 +76,18 @@ section{
 
 #task2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 10px;
-  height: 350px;
+  height: 100Į;
+}
+#task2>h1,#task1>h1{
+  text-align: center;
+  padding-top: 30px;
+}
+#task2>p{
+  padding: 20px;
+}
+.miskas>p{
+
+  text-align: center;
 }
