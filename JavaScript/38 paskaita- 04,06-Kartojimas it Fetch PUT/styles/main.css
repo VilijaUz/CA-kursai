@@ -1,0 +1,19 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+header{width: 200px;
+height: 100vh;
+background-color: antiquewhite;
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+}
+main{
+  margin-left: 200px;
+}
+/* main >section{
+  height: 50vh;
+  
+} */
+html{
+  scroll-behavior: smooth;
+}

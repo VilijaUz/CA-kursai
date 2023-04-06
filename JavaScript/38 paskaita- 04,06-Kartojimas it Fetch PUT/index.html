@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./scripts/main.js" type="module"></script>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+  <header>
+    <ul>
+      <li><a href="#kintamieji">Kintamieji</a></li>
+      <li><a href="#aritmetika">Aritmetika</a></li>
+      <li><a href="#salygos">Salygos</a></li>
+      <li><a href="#ciklai">Ciklai</a></li>
+      <li><a href="#funkcijos">Funkcijos</a></li>
+      <li><a href="#node">NODE</a></li>
+      <li><a href="#formos">FORMOS</a></li>
+      <li><a href="#metodai"></a>METODAI</li>
+      <li><a href="#destrukturizavimas">DESTRUKTURIZAVIMAS</a></li>
+      <li><a href="#moduliai">MODULIAI</a></li>
+      <li><a href="#klases">KLASES</a></li>
+      <li><a href="#dataStorage">DATA Storage</a></li>
+      <li><a href="#fetch">FETCH</a></li>
+    </ul>
+  </header>
+  <main>
+    <section id="kintamieji">
+      <h1>Kintamieji</h1>
+      <p>
+        kintamieji skirti saugoti/laikyti ivairia informacija
+        programos veikimo metu:
+
+      </p>
+      <ul>
+        <li>string -tekstas</li>
+        <li>number -skaicius</li>
+        <li>boolen - loginis</li>
+        <li>array -masyvas</li>
+        <li>object</li>
+      </ul>
+    </section>
+    <section id="aritmetika">
+      <h1>Aritmetika</h1>
+      <p>
+        Kazkokie veiksmai atliekami tarp duomenu/kintamuju.
+      </p>
+      <ul>
+        <li>+</li>
+        <li>-</li>
+        <li>* - daugyba</li>
+        <li>/ - dalyba</li>
+        <li>** - kelimas laipsniu</li>
+        <li>**(1/y) - saknies traukimas</li>
+        <li>% - liekanos gavimas</li>
+      </ul>
+    </section>
+    <section id="salygos">
+      <h2>Palyginimai</h2>
+      <p>
+        Palygini keleta duomenu.Ir palyginimas grazina
+        true arba false.(truthy ir falsy)
+      </p>
+      <ul>
+        <li>> - daugiau</li>
+        <li>
+          < - maziau</li>
+        <li>>=</li>
+        <li>
+          <=< /li>
+        <li>== lygu(reiksmes)</li>
+        <li>=== lygu(reiksmes ir tipai)</li>
+        <li>!= - nelygu(reikmes)</li>
+        <li>!== - nelygu(reiksmes ir tipai)</li>
+        <li>! -(NOT)- apvercia boolean reiksme</li>
+        <li>&& -(AND)- tikrina ar abiejose pusese salyga,grazina true</li>
+        <li>|| -(OR) -tikrina ar bent vienoje</li>
+      </ul>
+      <h1>Salygos</h1>
+      <p>
+        Kodas salygu viduje vykdomas tik tokiu atveji,jei
+        salyga grazina tiesa
+      </p>
+      <ul>
+        <li>if(){} else if(){} else{}</li>
+        <li>switch() case:</li>
+        <li>? : - (ternary)</li>
+        <li>&& -(logical AND)</li>
+      </ul>
+    </section>
+    <section id="ciklai">
+      <h1>Ciklai</h1>
+      <p>
+        Ciklai yra naudojami tuos pacius arba labai panasius
+        veiksmus daugeli kartu.
+      </p>
+      <ul>
+        <li>for</li>
+        <li>while</li>
+        <li>for of</li>
+        <li>for in</li>
+        <li>do while</li>
+        <li><a href="#metodai">iteraciniu metodu ciklai</a></li>
+      </ul>
+    </section>
+    <section id="funkcijos">
+      <h1>Funkcijos</h1>
+      <p>
+        Funkcijose esamas kodas vukdomas kodas vykdosi TIK
+        tuomet,kai funkcija yra iskvieciama. <br>
+        Funkcija gali buti iskvieciama daugeli kartu. <br>
+        Funkcija priima parametrus(duomenis) ,su kuriais atlieka
+        kazkokius veiksmus.Kreipiantis i funkcija
+        yra perduodami argumentai(duomenys).
+        <a href="https://i.stack.imgur.com/9lg1H.png"></a>
+        Funcijos viduje jie vadinami parametrais ,o ne argumentais.
+        (perpanaudojamas kodas)
+        Funkcija gali grazinti kazkoki rezultata.
+        Funkcijos gali buti perduotos kaip parametrai ir tuomet iskvieciamos;
+        tai vadinama callback. br>
+        callback'ai dazniausiai aprasomi kaip bevardes funkcijos.
+        Tokiu atveju ju nereikia perduoti kaip parametru.
+      </p>
+      <ul>
+        <li>function name()- paprasta f.</li>
+        <li>const name = () => {} - arrow/lamda f.</li>
+        <li>function(){} - bevarde f.</li>
+        <li>()=>{} - bevarde arrow f.(bevarde f. rasoma callback viduje)</li>
+      </ul>
+    </section>
+    <section id="node">
+      <h1>NODE</h1>
+      <h2>Selektinimas</h2>
+      <p>
+        Is JS kreipiamai i HTML ir selektinama taip pat kaip ir CSS'e kazkoks
+        arba kazkokie elementai.
+      </p>
+      <ul>
+        <li>querySelector('selektorius')-grazina rasta elemnta kaip Node'a</li>
+        <li>querySelectorAll('selektorius')-grazina visus rastus elemntus kaip NodeList'a
+          (beveik tas pats kaip masyvas)</li>
+        <li>Senieji:
+          <ul>
+            <li>getElementById('id')</li>
+            <li>getElementByClassName('class')</li>
+            <li>getElementByTagName('tagName')</li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Event'ai</h2>
+      <p>
+        Laukiama kol kazkokiam NODE elementui ivyks nurodytas veiksmas(pvz.:paspaudimas,
+        pelesUzejimas....) ir tuomet vykdoma nurodyta funkcija.
+      </p>
+      <p>
+        NODE.addEventListener('veiksmas',funkcija) - veiksmas:click,submit...
+      </p>
+      <h2>Kurimas</h2>
+      <p>
+        Galima kurti ir ikelti HTML elementus per JS'a. <br>
+        Tiems sukurtiems elementams,galima suteikti ivairias savybes
+        (event'us,atributus,kitusElementus...)
+      </p>
+      <h4>Komandos</h4>
+      <ul>
+        <li>NODE.createElement()</li>
+        <li>NODE.createTextNode()</li>
+        <li>NODE.append()</li>
+        <li>NODE.appendChild</li>
+        <li>NODE.classList.add()</li>
+        <li>NODE.classList.remove()</li>
+        <li>NODE.classList.contains()</li>
+        <li>NODE.setAttribute()</li>
+        <li>NODE.remove()</li>
+        <li>....</li>
+
+      </ul>
+
+
+    </section>
+    <section id="formos">
+      <h1>Formu nuskaitymas</h1>
+      <p>
+        Forma yra nuskaitoma po to ,kai ivyksta formos submit eventa'as.
+        Per JS'a sulauke formos pateikimo,sustabdome puslapio persikrovima
+        su event.preventDefault() ir susirenkame formos ivesciu laukuose
+        pateikta informacija. <br>
+        Pateikta informacija susirenkame kreipdamiesi i formos elementu vardus/id.
+      </p>
+    </section>
+    <section id="metodai">
+      <h1>Metodai</h1>
+      <p>
+        Metodas yra funkcija,priskirta scecifiniam objektui/masyvui
+      </p>
+
+      <h2>Masyvu metodai</h2>
+      <p>
+        Funkcijos skirtos tik masyvams.Ju yra labai daug ir iv formu. <br>
+        Masyvai turi iteracinius metodus.Jie skirti sukti cikla per veiksmus
+        su kiekvienu masyvo elementu.
+      </p>
+      <h4>Syntax</h4>
+      <p>
+        masyvas.iteracinisMetodas((masyvoElementas,iteracija,visasMasyvas)=>{veiksmai...})
+      </p>
+      <h2>Metodu ivairove</h2>
+      <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Math</li>
+        <li>Date</li>
+        <li>Array</li>
+        <li>Object</li>
+        <li>JSON</li>
+        <li>Global_Object....</li>
+      </ul>
+    </section>
+    <section id="destrukturizavimas">
+      <h1>Destrukturizavimas</h1>
+      <p>
+        Isardyti objekta/masyva/gaunamusParametrus.... i mazesnes dalis.
+
+      </p>
+      <p>
+        I funkcija/metoda/klase gaunamas vienas DIDELIS parametras ir is jo 
+        galima pasiimti tik reikalingas reiksmes.
+        Galima spread'inti masyva i atskirus gabaliukus.
+      </p>
+    </section>
+    <section id="moduliai">
+      <h1>MODULIAI</h1>
+      <p>
+        Vieno failo duomenu(kintamieji,klases,funkcijos...) perdavimas i kitus failus.
+        Export ir Import
+      </p>
+    </section>
+    <section id="klases">
+      <h1>Klases</h1>
+      <p>
+        Klases yra skirtos objektams. <br>
+        Klasei galima perduoti argumentus,kuriuos klase konstruktoriaus
+        viduje priima ir pasivadina kazkokiais pavadinimais,kuriuos naudoja 
+        visos klases viduje. <br>
+      </p>
+      <h3 >Pagrindiniai klases principai</h3>
+      <ul>
+        <li>Inkapsuliacija - viskas ko klasei reikia yra jos viduje</li>
+        <li>Abstrakcija - is isores negalima pasiekti,supaprastina kuriamo objekto naudojima</li>
+        <li>Paveldimumas -kuriant klases,galima pavedeti kitas klases</li>
+        <li>Polimorfizmas - tos pacios klases objektai gali tureti skirtingas strukturas</li>
+      </ul>
+    </section>
+    <section id="dataStorage">
+      <h1>dataStorage</h1>
+      <p>
+        Duomenu saugojimas .Tam,kad kiekviena karta paleista programa neprasidedtu
+        nuo 0.Butu atsimenami kazkokie vartotojo veiksmai.
+      </p>
+     <ul>
+      <li>cookies</li>
+      <li>localStorage</li>
+      <li>sessionStorage</li>
+      <li>JSON</li>
+      <li>DB(SQL -good,noSQL)</li>
+      <li>....</li>
+     </ul>
+
+    </section>
+    <section id="fetch">
+      <h1>FETCH</h1>
+      <p>
+        Fetch skirtas tam,kad butu galima kreiptis i koki nors 
+        API ir jam perduoti/pasiimti/redaguoti/trinti duomenis.
+      </p>
+      <h3>Metodai</h3>
+<ul>
+  <li>GET - gauna duomenis</li>
+  <li>POST - nusiuncia duomenis</li>
+  <li>DELETE - trina duomeni pagal ID</li>
+  <li>PATCH - lopyja duomeni pagal ID</li>
+  <li>PUT - perraso (tik) duomeni pagal ID</li>
+</ul>
+    </section>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "asmenys": [
+    {
+      "id": 1,
+      "vardas": " rokas",
+      "pavarde": "banI"
+    },
+    {
+      "id": 2,
+      "vardas": " Tadas",
+      "pavarde": "Toks"
+    },
+    {
+      "id": 3,
+      "vardas": " Ana",
+      "pavarde": "Tokia"
+    },
+    {
+      "id": 4,
+      "vardas": " Ona",
+      "pavarde": "Pati"
+    }
+  ]
+}

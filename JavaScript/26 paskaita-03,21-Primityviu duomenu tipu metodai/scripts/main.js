@@ -1,3 +1,9 @@
+const dabar = new Date();
+const dabarValue = dabar.valueOf();
+console.log(dabarValue); 
+
+
+
 /* 1) Sukurk variable 'milkPrice'. Su JS patikrink ir 
 informuok vartotoją alert() ar jam reikės centų, ar nereikės
  (t.y. ar skaičius sveikas).*/
@@ -5,9 +11,9 @@ informuok vartotoją alert() ar jam reikės centų, ar nereikės
 
 function milkPrice(x) {
   if (Number.isInteger(x)) {
-    return ("Jums nereikes centu.");
-  } else {
     return ("Jums reikes centu.");
+  } else {
+    return ("Jums nereikes centu.");
   }
 }
 
