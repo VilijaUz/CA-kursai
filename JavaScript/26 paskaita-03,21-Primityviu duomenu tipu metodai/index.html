@@ -29,7 +29,8 @@
       <h3> Metodai</h3>
       <ul>
         <li>toString() -pavercia i stringa tipo kintamaji</li>
-        <li>value(of) - grazina elemento  reiksme</li>
+        <li>valueOf() - grazina elemento reiksme</li>
+
       </ul>
 
     </section>
@@ -97,7 +98,8 @@
         <li>.at()-grazina simboli nurodytoje pozicijoje, console.log('zodis')
 
         </li>
-        <li>.charAt() <a href="https://asecuritysite.com/coding/asc2" target="_blank">string===charArray,pvz'rokas'[2]</a></li>
+        <li>.charAt() <a href="https://asecuritysite.com/coding/asc2"
+            target="_blank">string===charArray,pvz'rokas'[2]</a></li>
         <li>.concat() - prideda prie vieno stringo kita</li>
         <li>.endsWith() - patikrina galune</li>
         <li>.startsWith() - tikrinti ar prasiseda tavo stringas kazkokia skaiciu seka</li>
@@ -124,7 +126,7 @@
         <li>.matchAll() - reikia regex(palikti ateiciai)</li>
         <li>.replace() - reikia regex(palikti ateiciai)
           let zodziai='labas rytas,grazus rytas,ankstyvasrytas' ;
-        zodziai.replace('rytas','vakaras');</li>
+          zodziai.replace('rytas','vakaras');</li>
         <li>.replaceAll() - reikia regex(palikti ateiciai) </li>
         <li>.search() - iesko ar yra kokia seka</li>
 
@@ -132,41 +134,24 @@
 
     </section>
     <section id="milkPrice">
-			<h1 >Milk Price <span id="apskaiciuotiKaina"></span></h1>
-			
-			<form id="milkPriceForma">
-				<input 
-        type="number" 
-        name="milk" 
-        id="milk" 
-        placeholder="iveskite pieno kaina">
-			
-				<input 
-        type="submit" 
-        value="suskaiciuoti">
-			</form>
-     
-		</section>
+      <h1>Milk Price <span id="apskaiciuotiKaina"></span></h1>
+
+      <form id="milkPriceForma">
+        <input type="number" name="milk" id="milk" placeholder="iveskite pieno kaina">
+
+        <input type="submit" value="suskaiciuoti">
+      </form>
+
+    </section>
     <section>
       <h1>Kuro kaina</h1>
-      <form 
-      id="kuras"> <input 
-      type="number" 
-      name="kaina"
-       id="kaina"
-        step="0.01"
-         placeholder="įveskite litro kainą">
-          <input 
-          type="number"
-          name="kiekis"
-           id="kiekis"
-            step="0.1"
-             placeholder="įveskite litrų kiekį">
-              <input 
-              type="submit", 
-              value=pateikti>
-               <h1 id="suma"> </h1>
-               </form>
+      <form id="kuras">
+        <input type="number" name="kaina" id="kaina" step="0.01" placeholder="įveskite litro kainą">
+        <input type="number" name="kiekis" id="kiekis" step="0.1" placeholder="įveskite litrų kiekį">
+        <input type="submit" , value=pateikti>
+        <!-- <h1 id="suma"> eur<span></span></h1> -->
+        <h1>Kuro kaina <span id="suma"></span>eur</h1>
+      </form>
     </section>
   </main>
 </body>
