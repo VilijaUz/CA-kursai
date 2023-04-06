@@ -1,0 +1,103 @@
+{
+  "knygos": [
+    {
+      "id": 1,
+      "autorius": "  K.Sabaliauskaite",
+      "image": "https://www.patogupirkti.lt/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/i/m/image_593.jpg ",
+      "pavadinimas": "Petro Imperatore I",
+      "zanras": "romanas",
+      "tirazas": 10000,
+      "prekyboje": true
+    },
+    {
+      "id": 2,
+      "autorius": "  K.Sabaliauskaite",
+      "image": "https://www.patogupirkti.lt/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/s/i/silva2.jpg",
+      "pavadinimas": "Silva Rerum I",
+      "zanras": "romanas",
+      "tirazas": 5000,
+      "prekyboje": true
+    },
+    {
+      "id": 3,
+      "autorius": "  K.Sabaliauskaite",
+      "image": "https://www.patogupirkti.lt/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/s/i/silva-rerumi-ii-sabaliauskaite.jpg",
+      "pavadinimas": "Silva Rerum II",
+      "zanras": "romanas",
+      "tirazas": 6000,
+      "prekyboje": true
+    },
+    {
+      "id": 4,
+      "autorius": "  K.Sabaliauskaite",
+      "image": "https://www.patogupirkti.lt/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/s/i/silva-rerum-3.jpeg",
+      "pavadinimas": "Silva Rerum III",
+      "zanras": "romanas",
+      "tirazas": 3000,
+      "prekyboje": false
+    },
+    {
+      "id": 5,
+      "autorius": "  K.Sabaliauskaite",
+      "image": "https://www.patogupirkti.lt/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/d/a/danielius_dalba_72dpi_rgb.jpg",
+      "pavadinimas": "Danielius Dalba",
+      "zanras": "romanas",
+      "tirazas": 4000,
+      "prekyboje": true
+    },
+    {
+      "id": 6,
+      "autorius": "  K.Sabaliauskaite",
+      "image": "https://www.patogupirkti.lt/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/v/i/vilnius-wilno-vilna-three-short-stories-kopija.jpg",
+      "pavadinimas": "Vilnius",
+      "zanras": "romanas",
+      "tirazas": 2000,
+      "prekyboje": false
+    },
+    {
+      "id": 7,
+      "autorius": "  K.Sabaliauskaite",
+      "image": "https://www.patogupirkti.lt/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/p/e/petro-imperatore-ii.jpg",
+      "pavadinimas": "Petro Imperatore II",
+      "zanras": "romanas",
+      "tirazas": 10000,
+      "prekyboje": true
+    },
+    {
+      "autorius": "K.Sabaliauskaite",
+      "pavadinimas": "Silva Rerum IV",
+      "image": "https://www.patogupirkti.lt/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/s/i/silva-rerum-4-sabaliauskaite.jpg",
+      "zanras": "romanas",
+      "tirazas": 2000,
+      "prekyboje": true,
+      "id": 8
+    },
+    {
+      "autorius": "K.Sabaliauskaite",
+      "pavadinimas": "Silva Rerum IV",
+      "image": "https://www.perkuknyga.lt/images/content-images/2%20zmonesknygos.lt_5f05c172a9385.jpg",
+      "zanras": "romanas",
+      "tirazas": 2000,
+      "prekyboje": true,
+      "id": 9
+    },
+    {
+      "autorius": "K.Sabaliauskaite",
+      "pavadinimas": "Silva Rerum IV",
+      "image": "https://www.patogupirkti.lt/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/s/i/silva-rerum-4-sabaliauskaite.jpg",
+      "zanras": "romanas",
+      "tirazas": 1000,
+      "prekyboje": true,
+      "id": 10
+    },
+    {
+      "autorius": "K.Sabaliauskaite",
+      "pavadinimas": "Silva Rerum IV",
+      "image": "https://www.perkuknyga.lt/images/content-images/2%20zmonesknygos.lt_5f05c172a9385.jpg",
+      "zanras": "romanas",
+      "tirazas": 6000,
+      "prekyboje": true,
+      "id": 11
+    }
+  ]
+}

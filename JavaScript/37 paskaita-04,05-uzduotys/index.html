@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uzduotys</title>
+  <script src="./scripts/main.js" type="module"></script>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <main>
+   
+    <section id="knygosF">
+      <form>
+        <input type="text" name="autorius" id="autorius" placeholder="Iveskite autoriu...">
+        <input type="text" name="pavadinimas" id="pavadinimas" placeholder="Iveskite pavadinima...">
+        <input type="text" name="zanras" id="zanras" placeholder="Iveskite zanra...">
+        <input type="number" step="1000" name="titazas" id="tirazas" placeholder="...">
+        <div>
+          <label for="prekyboje">Ar yra prekyboje?</label>
+          <input type="checkbox" name="prekyboje" id="prekyboje">
+        </div>
+        <input type="url" name="image" id="image" placeholder="Knygos virselis..">
+        <input type="submit" value="Pateikti">
+      </form>
+    </section>
+
+    <section id="knygos">
+      <div class="knygosSab">
+        <h1>Autorius :</h1>
+        <img src="" alt="knyga">
+        <p>Pavadinimas :</p>
+        <p>Žanras :</p>
+        <p>Tirazas :</p>
+    
+        <p>Ar yra prekyboje ?</p>
+        <button class="rodyti-modal">Plačiau</button>
+        <button>Ištrinti knygą</button>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Pavadinimas :</h2>
+          <img src="" alt="knyga">
+          <p>Autorius :</p>
+          <p>Žanras :</p>
+          <p>Tirazas :</p>
+          <p>Ar yra prekyboje ?</p>
+          <button>Ištrinti knygą</button>
+        </div>
+      </div>
+
+    </section>
+ 
+  </main>
+
+</body>
+
+</html>
