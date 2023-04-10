@@ -210,4 +210,4 @@ DaniKrossing - https://www.youtube.com/@Dani_Krossing (web dev)
 
 
 */
- 
+alert('Nevertikite,prasau,labai grieztai')
