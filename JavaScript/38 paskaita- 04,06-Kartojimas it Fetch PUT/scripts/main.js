@@ -219,7 +219,7 @@ fetch('URL/ID', {
     /*
     {
       rytmetis:false,
-      id:1
+      id:1(jei nori viska perrasyti,naudoji puta)
     }
     */
   });
@@ -240,7 +240,7 @@ fetch('URL/ID', {
     {
     raktinisZodis: 'reiksme',
     rytmetis: true,
-    rytmetis0: false,(prideda nauja)
+    rytmetis0: false,(perraso,o jei kitu pavadinimu -papildo)
     valanda: 9,
     id:1
   }

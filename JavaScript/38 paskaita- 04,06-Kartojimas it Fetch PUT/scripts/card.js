@@ -25,10 +25,9 @@ export default class Zmogus{
   }
   update(){
     this.updateButton.addEventListener('click',()=>{
-      console.log('paspaudei ant',this.id);
+      console.log('paspaudei ant', this.id);
       console.log(this.vardas,this.pavarde);
-      new UpdateModalas(
-       this.id,this.vardas,this.pavarde);
+      new UpdateModalas(this.id,this.vardas,this.pavarde);
     
     });
   }

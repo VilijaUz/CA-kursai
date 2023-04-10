@@ -16,7 +16,8 @@ export default class UpdateModalas{
     this.closeModal();
 
     this.form=document.createElement('form');
-    this.updateDiv.appendChild(this.form);
+    this.update();
+    this.updateDiv.append(this.closeButton,this.form);
 
     this.vardasInput=document.createElement('input');
     this.vardasInput.setAttribute('type','text');
@@ -40,7 +41,7 @@ export default class UpdateModalas{
 
   }
 closeModal(){
-  this.closeButton.addEventListener('click',()=>{
+    this.closeButton.addEventListener('click',()=>{
     this.updateDiv.remove();
 
   });
